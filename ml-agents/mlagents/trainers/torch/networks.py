@@ -294,7 +294,7 @@ class SimpleActor(nn.Module, Actor):
             vec_inputs, vis_inputs, memories=memories, sequence_length=1
         )
 
-        cont_action_out, disc_action_out, action_out_deprecated = self.action_model.get_action_out(
+        cont_action_out, disc_action_out, disc_probs_out, action_out_deprecated = self.action_model.get_action_out(
             encoding, masks
         )
         export_out = [
@@ -304,7 +304,11 @@ class SimpleActor(nn.Module, Actor):
         if self.action_spec.continuous_size > 0:
             export_out += [cont_action_out, self.continuous_act_size_vector]
         if self.action_spec.discrete_size > 0:
-            export_out += [disc_action_out, self.discrete_act_size_vector]
+            export_out += [
+                disc_action_out,
+                disc_probs_out,
+                self.discrete_act_size_vector,
+            ]
         # Only export deprecated nodes with non-hybrid action spec
         if self.action_spec.continuous_size == 0 or self.action_spec.discrete_size == 0:
             export_out += [

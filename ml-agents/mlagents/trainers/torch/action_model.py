@@ -170,18 +170,18 @@ class ActionModel(nn.Module):
             continuous_out = dists.continuous.exported_model_output()
             action_out_deprecated = dists.continuous.exported_model_output()
         if self.action_spec.discrete_size > 0 and dists.discrete is not None:
-            discrete_out_list = [
+            discrete_out = [
                 discrete_dist.exported_model_output()
                 for discrete_dist in dists.discrete
             ]
-            discrete_out = torch.cat(discrete_out_list, dim=1)
+            discrete_out = torch.cat(discrete_out, dim=1)
 
-            discrete_probs_out = [
+            discrete_probs_out_list = [
                 discrete_dist.exported_model_output_probs()
                 for discrete_dist in dists.discrete
             ]
-            discrete_probs_out = torch.cat(discrete_probs_out, dim=1)
-            action_out_deprecated = torch.cat(discrete_probs_out, dim=1)
+            discrete_probs_out = torch.cat(discrete_probs_out_list, dim=1)
+            action_out_deprecated = torch.cat(discrete_probs_out_list, dim=1)
         # deprecated action field does not support hybrid action
         if self.action_spec.continuous_size > 0 and self.action_spec.discrete_size > 0:
             action_out_deprecated = None

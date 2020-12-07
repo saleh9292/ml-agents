@@ -52,12 +52,50 @@ namespace Unity.MLAgents.Inference
     /// </summary>
     internal class DiscreteActionOutputApplier : TensorApplier.IApplier
     {
+        readonly ActionSpec m_ActionSpec;
+
+        public DiscreteActionOutputApplier(ActionSpec actionSpec)
+        {
+            m_ActionSpec = actionSpec;
+        }
+
+        public void Apply(TensorProxy tensorProxy, IEnumerable<int> actionIds, Dictionary<int, ActionBuffers> lastActions)
+        {
+            var actionSize = tensorProxy.shape[tensorProxy.shape.Length - 1];
+            var agentIndex = 0;
+            foreach (int agentId in actionIds)
+            {
+                if (lastActions.ContainsKey(agentId))
+                {
+                    var actionBuffer = lastActions[agentId];
+                    if (actionBuffer.IsEmpty())
+                    {
+                        actionBuffer = new ActionBuffers(m_ActionSpec);
+                        lastActions[agentId] = actionBuffer;
+                    }
+                    var discreteBuffer = actionBuffer.DiscreteActions;
+                    for (var j = 0; j < actionSize; j++)
+                    {
+                        discreteBuffer[j] = (int)tensorProxy.data[agentIndex, j];
+                    }
+                }
+                agentIndex++;
+            }
+        }
+    }
+
+    /// <summary>
+    /// The Applier for the Discrete Action output tensor. Uses multinomial to sample discrete
+    /// actions from the logits contained in the tensor.
+    /// </summary>
+    internal class DiscreteActionProbsOutputApplier : TensorApplier.IApplier
+    {
         readonly int[] m_ActionSize;
         readonly Multinomial m_Multinomial;
         readonly ITensorAllocator m_Allocator;
         readonly ActionSpec m_ActionSpec;
 
-        public DiscreteActionOutputApplier(ActionSpec actionSpec, int seed, ITensorAllocator allocator)
+        public DiscreteActionProbsOutputApplier(ActionSpec actionSpec, int seed, ITensorAllocator allocator)
         {
             m_ActionSize = actionSpec.BranchSizes;
             m_Multinomial = new Multinomial(seed);
@@ -67,7 +105,6 @@ namespace Unity.MLAgents.Inference
 
         public void Apply(TensorProxy tensorProxy, IEnumerable<int> actionIds, Dictionary<int, ActionBuffers> lastActions)
         {
-            //var tensorDataProbabilities = tensorProxy.Data as float[,];
             var idActionPairList = actionIds as List<int> ?? actionIds.ToList();
             var batchSize = idActionPairList.Count;
             var actionValues = new float[batchSize, m_ActionSize.Length];

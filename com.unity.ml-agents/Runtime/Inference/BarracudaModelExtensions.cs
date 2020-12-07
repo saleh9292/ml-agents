@@ -226,8 +226,11 @@ namespace Unity.MLAgents.Inference
             }
             else
             {
-                return model.outputs.Contains(TensorNames.DiscreteActionOutput) &&
+                var hasDiscreteActionOutput = model.outputs.Contains(TensorNames.DiscreteActionOutput) &&
                     (int)model.GetTensorByName(TensorNames.DiscreteActionOutputShape)[0] > 0;
+                var hasDiscreteActionProbsOutput = model.outputs.Contains(TensorNames.DiscreteActionProbsOutput) &&
+                    (int)model.GetTensorByName(TensorNames.DiscreteActionOutputShape)[0] > 0;
+                return hasDiscreteActionOutput || hasDiscreteActionProbsOutput;
             }
         }
 

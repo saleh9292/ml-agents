@@ -77,11 +77,13 @@ public class UGVAgent1 : Agent
         var lookAtTargetReward = (Vector3.Dot(cubeForward, this.transform.forward) + 1) * .5F;
         //Debug.Log(lookAtTargetReward);
 
-        AddReward(lookAtTargetReward / 10);
+        
 
         AddReward((distanceToTargetprev - distanceToTarget) / distanceToTarget);
         //Debug.Log((distanceToTargetprev - distanceToTarget) / distanceToTarget);
         distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
+
+        //Debug.Log(lookAtTargetReward);
         //Debug.Log(lookAtTargetReward * ((limit - distanceToTarget) / limit));
         // Reached target
 
@@ -95,10 +97,10 @@ public class UGVAgent1 : Agent
         // Fell off platform
         else if (Mathf.Abs(this.transform.localPosition.x) > limit || Mathf.Abs(this.transform.localPosition.z) > limit || this.transform.localPosition.y < 0)
         {
-            SetReward(-1f);
+            SetReward(0f);
             EndEpisode();
         }
-        AddReward(-0.1f);
+        //AddReward(-0.1f);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)

@@ -58,11 +58,49 @@ public class UGVAgent : Agent
     public float forceMultiplier = 10;
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
+        //// Actions, size = 2
+        //Vector3 controlSignal = Vector3.zero;
+        //controlSignal.x = actionBuffers.ContinuousActions[0];
+        //controlSignal.z = actionBuffers.ContinuousActions[1];
+        //WheelDrive.angle= controlSignal.x;
+        //WheelDrive.torque = controlSignal.z;
+
+        //// Rewards
+        //float distanceToTarget = Vector3.Distance(this.transform.localPosition, Target.localPosition);
+
+        //var cubeForward = Target.transform.forward;
+
+        //var lookAtTargetReward = (Vector3.Dot(cubeForward, this.transform.forward) + 1) * .5F;
+        ////Debug.Log(lookAtTargetReward);
+
+        //AddReward(lookAtTargetReward/10);
+
+        //AddReward((distanceToTargetprev- distanceToTarget)/ distanceToTarget);
+        ////Debug.Log((distanceToTargetprev - distanceToTarget) / distanceToTarget);
+        //distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
+        ////Debug.Log(lookAtTargetReward * ((limit - distanceToTarget) / limit));
+        //// Reached target
+
+
+        //if (distanceToTarget < 1.42f)
+        //{
+        //    SetReward(1.0f);
+        //    EndEpisode();
+        //}
+
+        //// Fell off platform
+        //else if (Mathf.Abs(this.transform.localPosition.x) > limit  || Mathf.Abs(this.transform.localPosition.z) > limit || this.transform.localPosition.y < 0  )
+        //{
+        //    SetReward(-1f);
+        //    EndEpisode();
+        //}
+        //AddReward(-0.1f);
+
         // Actions, size = 2
         Vector3 controlSignal = Vector3.zero;
         controlSignal.x = actionBuffers.ContinuousActions[0];
         controlSignal.z = actionBuffers.ContinuousActions[1];
-        WheelDrive.angle= controlSignal.x;
+        WheelDrive.angle = controlSignal.x;
         WheelDrive.torque = controlSignal.z;
 
         // Rewards
@@ -73,10 +111,10 @@ public class UGVAgent : Agent
         var lookAtTargetReward = (Vector3.Dot(cubeForward, this.transform.forward) + 1) * .5F;
         //Debug.Log(lookAtTargetReward);
 
-        AddReward(lookAtTargetReward/10);
+        AddReward(lookAtTargetReward / 10);
 
-        AddReward((distanceToTargetprev- distanceToTarget)/ distanceToTarget);
-        //Debug.Log((distanceToTargetprev - distanceToTarget) / distanceToTarget);
+        AddReward((distanceToTargetprev - distanceToTarget) / distanceToTarget);
+        Debug.Log((distanceToTargetprev - distanceToTarget) / distanceToTarget);
         distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
         //Debug.Log(lookAtTargetReward * ((limit - distanceToTarget) / limit));
         // Reached target
@@ -89,12 +127,15 @@ public class UGVAgent : Agent
         }
 
         // Fell off platform
-        else if (Mathf.Abs(this.transform.localPosition.x) > limit  || Mathf.Abs(this.transform.localPosition.z) > limit || this.transform.localPosition.y < 0  )
+        else if (Mathf.Abs(this.transform.localPosition.x) > limit || Mathf.Abs(this.transform.localPosition.z) > limit || this.transform.localPosition.y < 0)
         {
             SetReward(-1f);
             EndEpisode();
         }
         AddReward(-0.1f);
+
+
+
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)

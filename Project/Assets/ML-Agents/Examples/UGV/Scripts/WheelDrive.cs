@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 
 [Serializable]
@@ -6,7 +6,8 @@ public enum DriveType
 {
 	RearWheelDrive,
 	FrontWheelDrive,
-	AllWheelDrive
+	AllWheelDrive,
+    DiffwheelDrive
 }
 
 public class WheelDrive : MonoBehaviour
@@ -29,6 +30,17 @@ public class WheelDrive : MonoBehaviour
 
 	[Tooltip("The vehicle's drive type: rear-wheels drive, front-wheels drive or all-wheels drive.")]
 	public DriveType driveType;
+
+
+
+    public float angle = 0;
+    public float torque = 0;
+
+
+
+
+
+
 
     private WheelCollider[] m_Wheels;
 
@@ -57,16 +69,35 @@ public class WheelDrive : MonoBehaviour
 	{
 		m_Wheels[0].ConfigureVehicleSubsteps(criticalSpeed, stepsBelow, stepsAbove);
 
-		float angle = maxAngle * Input.GetAxis("Horizontal");
-		float torque = maxTorque * Input.GetAxis("Vertical");
+
 
 		float handBrake = Input.GetKey(KeyCode.X) ? brakeTorque : 0;
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		foreach (WheelCollider wheel in m_Wheels)
 		{
 			// A simple car where front wheels steer while rear ones drive.
 			if (wheel.transform.localPosition.z > 0)
-				wheel.steerAngle = angle;
+				wheel.steerAngle = angle*maxAngle;
 
 			if (wheel.transform.localPosition.z < 0)
 			{
@@ -75,7 +106,7 @@ public class WheelDrive : MonoBehaviour
 
 			if (wheel.transform.localPosition.z < 0 && driveType != DriveType.FrontWheelDrive)
 			{
-				wheel.motorTorque = torque;
+				wheel.motorTorque = torque*maxTorque;
 			}
 
 			if (wheel.transform.localPosition.z >= 0 && driveType != DriveType.RearWheelDrive)

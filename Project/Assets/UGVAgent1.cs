@@ -128,15 +128,19 @@ public class UGVAgent1 : Agent
         continuousActionsOut[3] = 0;
 
         //continuousActionsOut[0] = Input.GetAxis("Horizontal");
-        continuousActionsOut[0] += 0.5f*Input.GetAxis("Horizontal");
-        continuousActionsOut[1] += 0.5f * -Input.GetAxis("Horizontal");
-        continuousActionsOut[2] += 0.5f * Input.GetAxis("Horizontal");
-        continuousActionsOut[3] += 0.5f * -Input.GetAxis("Horizontal");
+        continuousActionsOut[0] += Input.GetAxis("Horizontal");
+        continuousActionsOut[1] +=  -Input.GetAxis("Horizontal");
+        continuousActionsOut[2] +=  Input.GetAxis("Horizontal");
+        continuousActionsOut[3] +=  -Input.GetAxis("Horizontal");
 
-        continuousActionsOut[0] += 0.5f * Input.GetAxis("Vertical");
-        continuousActionsOut[1] += 0.5f * Input.GetAxis("Vertical");
-        continuousActionsOut[2] += 0.5f * Input.GetAxis("Vertical");
-        continuousActionsOut[3] += 0.5f * Input.GetAxis("Vertical");
+        continuousActionsOut[0] +=  Input.GetAxis("Vertical");
+        continuousActionsOut[1] +=  Input.GetAxis("Vertical");
+        continuousActionsOut[2] +=  Input.GetAxis("Vertical");
+        continuousActionsOut[3] +=  Input.GetAxis("Vertical");
+
+
+        Debug.Log(transform.forward );
+       //Debug.Log(Target.transform.forward);
     }
 
 

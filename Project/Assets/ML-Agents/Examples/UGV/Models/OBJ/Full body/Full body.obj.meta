@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: 1fb291a3dc885b1469064f3eac8d15cf
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_10_Silla_koost-2_Silla_kinniti_1-2Mat
+    second: {fileID: 2100000, guid: 59e95fb3fe598674b95fd3bc5ad79646, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_11_Silla_koost-2_Kaamera_imitatsioon-2Mat
+    second: {fileID: 2100000, guid: c15fcf013ec817f4fa0737f7eaff329c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_12_Silla_koost-2_Silla_kinniti_1-1Mat
+    second: {fileID: 2100000, guid: 23c56f0ba2bcceb4788ab12295e73598, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_13_Silla_koost-2_Silla_kinniti_1-3Mat
+    second: {fileID: 2100000, guid: 744cbaa6664d35848b09ba114d21ca54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_14_Jalg-2_Vinkel30x45x4-1Mat
+    second: {fileID: 2100000, guid: be259f4c4b6d4fe459a609bb2852ca76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_15_Jalg-2_Piduri_kate-1_Piduri_katte_plaat-1Mat
+    second: {fileID: 2100000, guid: eb4d8c0bc58d7744892cc3c3f0dfbf2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_16_Jalg-2_Piduri_kate-1_Piduri_katte_r_ngas-1Mat
+    second: {fileID: 2100000, guid: 5056cf18b866a90469e44c0f735f14e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_17_Jalg-2_Piduri_kate-1_Piduri_katte_ketas-1Mat
+    second: {fileID: 2100000, guid: 0555a170e5826eb4a9dd05c8b42b481a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_1_Silla_koost-2_reduktori_imitatsioon-1Mat
+    second: {fileID: 2100000, guid: f1541dc8e3969dc479001a47efa34406, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_2_Silla_koost-2_Silla_pealmine_plekk-1Mat
+    second: {fileID: 2100000, guid: 03580d3c8c569f6489a924d315eaff72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_3_Silla_koost-2_Silla_kinniti_1-4Mat
+    second: {fileID: 2100000, guid: ce46a4bd81089484bae6d15a44aa0326, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_4_Cut-Extrude1_faceMat
+    second: {fileID: 2100000, guid: 1bc6c373c53eed7439492178beb8fae8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_5_Silla_koost-2_Sild-1Mat
+    second: {fileID: 2100000, guid: 6cc5026a35c44e24f882191e0cd67d01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_6_Silla_koost-2_reduktori_imitatsioon-2Mat
+    second: {fileID: 2100000, guid: 52bb5eea41536bf49bdd03ff8bf76695, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_7_Silla_koost-2_Silla_esimene_plekk-1Mat
+    second: {fileID: 2100000, guid: 664204161a56431469d9ee3488890bbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_8_Silla_koost-2_Kaamera_imitatsioon-1Mat
+    second: {fileID: 2100000, guid: c17c67a9ad4e0fc43a3322470ae9e6a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_9_Revolve1_faceMat
+    second: {fileID: 2100000, guid: d58e836109f193240bdacdee4566d23b, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 0
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

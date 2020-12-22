@@ -1,0 +1,1 @@
+mlagents-learn config/saleh/UGV3_config.yaml --env=D:\UnityProjects\Ready --run-id=UGVfromcralwler --num-envs=4 --force

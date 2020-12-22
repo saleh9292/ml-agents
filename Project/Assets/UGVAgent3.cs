@@ -11,7 +11,7 @@ public class UGVAgent3 : Agent
     float limit = 4f;
     float distanceToTargetprev = 4f;
     float intialdistanceToTarget = 0.0f;
-    public float TargetWalkingSpeed = 2;
+    public float TargetWalkingSpeed = 1;
 
     OrientationCubeController m_OrientationCube;
     DirectionIndicator m_DirectionIndicator;
@@ -43,6 +43,8 @@ public class UGVAgent3 : Agent
 
         distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
         intialdistanceToTarget = distanceToTargetprev;
+
+        UpdateOrientationObjects();
     }
 
 
@@ -116,8 +118,19 @@ public class UGVAgent3 : Agent
 
         if (distanceToTarget < 1.42f)
         {
-            AddReward(1.0f);
-            EndEpisode();
+            AddReward(10f);
+            //EndEpisode();
+            Target.localPosition = new Vector3(Random.value * 8 - 4,
+                                           0.25f,
+                                           Random.value * 8 - 4);
+
+            distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
+            intialdistanceToTarget = distanceToTargetprev;
+
+           // UpdateOrientationObjects();
+            
+
+
         }
 
         // Fell off platform
@@ -147,7 +160,7 @@ public class UGVAgent3 : Agent
         continuousActionsOut[2] = 0;
         continuousActionsOut[3] = 0;
 
-        //continuousActionsOut[0] = Input.GetAxis("Horizontal");
+        continuousActionsOut[0] += Input.GetAxis("Horizontal");
         continuousActionsOut[0] += Input.GetAxis("Horizontal");
         continuousActionsOut[1] += -Input.GetAxis("Horizontal");
         continuousActionsOut[2] += Input.GetAxis("Horizontal");
@@ -159,7 +172,7 @@ public class UGVAgent3 : Agent
         continuousActionsOut[3] += Input.GetAxis("Vertical");
 
 
-       //Debug.Log(transform.forward);
+        //Debug.Log(transform.forward);
         //Debug.Log(Target.transform.forward);
     }
     void UpdateOrientationObjects()
@@ -189,7 +202,7 @@ public class UGVAgent3 : Agent
 
         var lookAtTargetReward = (Vector3.Dot(cubeForward, transform.forward) + 1) * .5F;
         //Debug.Log(lookAtTargetReward);
-        AddReward(matchSpeedReward * lookAtTargetReward);
+        AddReward(matchSpeedReward * lookAtTargetReward*0.1f);
 
 
     }

@@ -391,8 +391,8 @@ Rigidbody:
   m_GameObject: {fileID: 2776116785044045997}
   serializedVersion: 2
   m_Mass: 300
-  m_Drag: 0.1
-  m_AngularDrag: 0.1
+  m_Drag: 1.1
+  m_AngularDrag: 1.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -413,7 +413,7 @@ MonoBehaviour:
   naturalFrequency: 10
   dampingRatio: 0.8
   forceShift: 0.03
-  setSuspensionDistance: 1
+  setSuspensionDistance: 0
 --- !u!114 &3964196257596155560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,7 +477,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   TargetWalkingSpeed: 2
   Target: {fileID: 0}
   forceMultiplier: 10

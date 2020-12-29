@@ -1482,7 +1482,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5022602860645237092, guid: 6576d13666a5dce48a914a03795eb45b,
+        type: 3}
     - target: {fileID: 9046892082528286389, guid: b3191a16250637e4bb6158f5f7968bb7,
         type: 3}
       propertyPath: m_ForceAppPointDistance

@@ -123,10 +123,10 @@ public class WheelDriveSkidRotate : MonoBehaviour
         }
 
 
-        m_Legs[0].transform.rotation *= Quaternion.AngleAxis(-RotateFR * Time.fixedDeltaTime, Vector3.forward);
-        m_Legs[1].transform.rotation *= Quaternion.AngleAxis(-RotateBR * Time.fixedDeltaTime, Vector3.forward);
-        m_Legs[2].transform.rotation *= Quaternion.AngleAxis(RotateFL * Time.fixedDeltaTime, Vector3.forward);
-        m_Legs[3].transform.rotation *= Quaternion.AngleAxis(RotateBL * Time.fixedDeltaTime, Vector3.forward);
+        m_Legs[0].transform.rotation *= Quaternion.AngleAxis(-RotateFR * maxRotationspeed* Time.fixedDeltaTime, Vector3.forward);
+        m_Legs[1].transform.rotation *= Quaternion.AngleAxis(-RotateBR * maxRotationspeed * Time.fixedDeltaTime, Vector3.forward);
+        m_Legs[2].transform.rotation *= Quaternion.AngleAxis(RotateFL * maxRotationspeed * Time.fixedDeltaTime, Vector3.forward);
+        m_Legs[3].transform.rotation *= Quaternion.AngleAxis(RotateBL * maxRotationspeed * Time.fixedDeltaTime, Vector3.forward);
 
 
 

@@ -20,7 +20,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 6Legs.unity
     guid: d3b7b1230f4631645aa23a5acceb72b7
-  - enabled: 1
+  - enabled: 0
     path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 7Stairs.unity
     guid: d5413e53f33bc0145ad2c3f7371ca4fc
+  - enabled: 1
+    path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 7Stairs2.unity
+    guid: 494e1243fa5b2ba4e878f50c2d55931c
   m_configObjects: {}

@@ -150,6 +150,7 @@ public class MazeSpawner : MonoBehaviour {
                 tmp = Instantiate(Floor) as GameObject;
                 tmp.transform.parent = transform;
                 tmp.transform.localPosition = new Vector3(x, 0, z);
+                tmp.layer = 9;
 
                 if (cell.WallRight)
                 {
@@ -157,6 +158,7 @@ public class MazeSpawner : MonoBehaviour {
                     tmp.transform.parent = transform;
                     tmp.transform.localPosition = new Vector3(x + CellWidth / 2, 0, z)+Wall.transform.position;
                     tmp.transform.localRotation= Quaternion.Euler(0, 90, 0);
+                    tmp.layer = 9;
                 }
                 if (cell.WallFront)
                 {
@@ -164,6 +166,7 @@ public class MazeSpawner : MonoBehaviour {
                     tmp.transform.parent = transform;
                     tmp.transform.localPosition = new Vector3(x, 0, z + CellHeight / 2) + Wall.transform.position;
                     tmp.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    tmp.layer = 9;
                 }
                 if (cell.WallLeft)
                 {
@@ -171,6 +174,7 @@ public class MazeSpawner : MonoBehaviour {
                     tmp.transform.parent = transform;
                     tmp.transform.localPosition = new Vector3(x - CellWidth / 2, 0, z) + Wall.transform.position;
                     tmp.transform.localRotation = Quaternion.Euler(0, 270, 0);
+                    tmp.layer = 9;
                 }
                 if (cell.WallBack)
                 {
@@ -178,11 +182,13 @@ public class MazeSpawner : MonoBehaviour {
                     tmp.transform.parent = transform;
                     tmp.transform.localPosition = new Vector3(x, 0, z - CellHeight / 2) + Wall.transform.position;
                     tmp.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                    tmp.layer = 9;
                 }
                 if (cell.IsGoal)
                 {
                     //tmp2 = Instantiate(GoalPrefab,new Vector3(x,1,z), Quaternion.Euler(0,0,0)) as GameObject;
                     Target.transform.localPosition = new Vector3(x, 0.177f, z);
+
                 }
 
 
@@ -203,6 +209,7 @@ public class MazeSpawner : MonoBehaviour {
                     tmp.transform.parent = transform;
                     tmp.transform.localPosition =  new Vector3(x - CellWidth / 2, 0, z - CellHeight / 2);
                     tmp.transform.localRotation = Quaternion.identity;
+                    tmp.layer = 9;
 
 
                 }

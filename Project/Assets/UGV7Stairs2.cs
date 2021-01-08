@@ -10,6 +10,7 @@ public class UGV7Stairs2 : Agent
     WheelDriveSkidRotate wheelDriveSkid;
     float limit = 4f;
 
+    bool a, b, c = false;
 
     float distanceToTargetprev = 4f;
     float currentD = 0f;
@@ -38,7 +39,7 @@ public class UGV7Stairs2 : Agent
         // If the Agent fell, zero its momentum
         this.rBody.angularVelocity = Vector3.zero;
         this.rBody.velocity = Vector3.zero;
-        this.transform.localPosition = new Vector3(Random.Range(-4.0f, 4.0f), 0.7f, Random.Range(0.0f, -4.0f));
+        this.transform.localPosition = new Vector3(Random.Range(-4.0f, 4.0f), 0.7f, 0);
 
         this.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
         // }
@@ -71,6 +72,10 @@ public class UGV7Stairs2 : Agent
 
 
         UpdateOrientationObjects();
+
+        a = false;
+        b = false;
+        c = false;
     }
 
 
@@ -166,7 +171,7 @@ public class UGV7Stairs2 : Agent
                                            1.71f,
                                            Random.Range(6.0f, 8.0f));
 
-            this.transform.localPosition = new Vector3(Random.Range(-4.0f, 4.0f), 0.7f, Random.Range(0.0f, -4.0f));
+            this.transform.localPosition = new Vector3(Random.Range(-4.0f, 4.0f), 0.7f, 0);
 
             distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
             intialdistanceToTarget = distanceToTargetprev;
@@ -174,7 +179,7 @@ public class UGV7Stairs2 : Agent
 
             // UpdateOrientationObjects();
 
-
+            EndEpisode();
 
         }
 
@@ -204,6 +209,11 @@ public class UGV7Stairs2 : Agent
         continuousActionsOut[1] = 0;
         continuousActionsOut[2] = 0;
         continuousActionsOut[3] = 0;
+        continuousActionsOut[4] = 0;
+        continuousActionsOut[5] = 0;
+        continuousActionsOut[6] = 0;
+        continuousActionsOut[7] = 0;
+
 
         continuousActionsOut[0] += Input.GetAxis("Horizontal");
         continuousActionsOut[0] += Input.GetAxis("Horizontal");
@@ -215,6 +225,33 @@ public class UGV7Stairs2 : Agent
         continuousActionsOut[1] += Input.GetAxis("Vertical");
         continuousActionsOut[2] += Input.GetAxis("Vertical");
         continuousActionsOut[3] += Input.GetAxis("Vertical");
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            continuousActionsOut[4] = 1;
+
+        }
+
+
+        if (Input.GetKey(KeyCode.S))
+        {
+
+            continuousActionsOut[5] = 1;
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+
+            continuousActionsOut[6] = 1;
+        }
+
+
+        if (Input.GetKey(KeyCode.F))
+        {
+
+            continuousActionsOut[7] = 1;
+        }
+
 
 
         //Debug.Log(wheelDriveSkid.m_Legs[0].localRotation.eulerAngles.z);
@@ -260,6 +297,30 @@ public class UGV7Stairs2 : Agent
 
         }
 
+
+        if (a == false && this.transform.localPosition.z >= 2.5)
+        { 
+        AddReward(5);
+        a = true;
+        }
+
+
+        if (b == false && this.transform.localPosition.z >= 4.5)
+        {
+            AddReward(5);
+            b = true;
+        }
+
+
+        if (c == false && this.transform.localPosition.z >= 6.3)
+        {
+            AddReward(5);
+            c = true;
+        }
+        //Debug.Log(wheelDriveSkid.m_Legs[0].localRotation.eulerAngles.z);
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[1].localRotation.eulerAngles.z);
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[2].localRotation.eulerAngles.z);
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[3].localRotation.eulerAngles.z);
 
         //Debug.Log(lookAtTargetReward);
         //AddReward(matchSpeedReward * lookAtTargetReward * 0.01f);

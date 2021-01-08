@@ -702,7 +702,7 @@ MonoBehaviour:
     VectorActionSize: 08000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: beb7159955dda37478be97e4dc3d9ed2, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: UGV6Legs
@@ -772,6 +772,7 @@ MonoBehaviour:
   MaxStep: 0
   TargetWalkingSpeed: 1
   Target: {fileID: 0}
+  Body: {fileID: 0}
   forceMultiplier: 10
 --- !u!1 &2776116785327814067
 GameObject:

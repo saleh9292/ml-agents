@@ -300,8 +300,8 @@ WheelCollider:
     spring: 7428.5146
     damper: 1188.5624
     targetPosition: 0.5
-  m_SuspensionDistance: 0.23
-  m_ForceAppPointDistance: 0.21785402
+  m_SuspensionDistance: 0.05
+  m_ForceAppPointDistance: 0.5
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -425,8 +425,8 @@ WheelCollider:
     spring: 7454.666
     damper: 1192.7466
     targetPosition: 0.5
-  m_SuspensionDistance: 0.23
-  m_ForceAppPointDistance: 0.21785402
+  m_SuspensionDistance: 0.05
+  m_ForceAppPointDistance: 0.5
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -517,8 +517,8 @@ WheelCollider:
     spring: 7545.3237
     damper: 1207.2518
     targetPosition: 0.5
-  m_SuspensionDistance: 0.23
-  m_ForceAppPointDistance: 0.24504763
+  m_SuspensionDistance: 0.05
+  m_ForceAppPointDistance: 0.5
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -579,8 +579,8 @@ WheelCollider:
     spring: 7571.4956
     damper: 1211.4393
     targetPosition: 0.5
-  m_SuspensionDistance: 0.23
-  m_ForceAppPointDistance: 0.22028917
+  m_SuspensionDistance: 0.05
+  m_ForceAppPointDistance: 0.5
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -611,8 +611,9 @@ GameObject:
   - component: {fileID: 2094712309337160218}
   - component: {fileID: 2299066296197503570}
   - component: {fileID: 8339910102530717189}
-  - component: {fileID: 6600159475849125070}
   - component: {fileID: 1354291084722931326}
+  - component: {fileID: 6600159475849125070}
+  - component: {fileID: 3326504635662253055}
   m_Layer: 0
   m_Name: UGV 7Stairs2
   m_TagString: Untagged
@@ -647,7 +648,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2776116785044045997}
   serializedVersion: 2
-  m_Mass: 300
+  m_Mass: 500
   m_Drag: 1.5
   m_AngularDrag: 1.5
   m_UseGravity: 1
@@ -685,7 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BrainParameters:
     VectorObservationSize: 18
-    NumStackedVectorObservations: 1
+    NumStackedVectorObservations: 10
     VectorActionSize: 08000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
@@ -736,7 +737,7 @@ MonoBehaviour:
   RotateFR: 0
   RotateBL: 0
   RotateBR: 0
-  maxTorque: 75
+  maxTorque: 100
   maxRotationspeed: 100
   criticalSpeed: 5
   stepsBelow: 5
@@ -762,11 +763,31 @@ MonoBehaviour:
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 512
-  m_ObservationStacks: 1
+  m_ObservationStacks: 10
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
   m_StartVerticalOffset: 0.4
   m_EndVerticalOffset: 0.4
+--- !u!114 &1354291084722931326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2776116785044045997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81879a0d24ade9b43b94ac5f96504ad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 5000
+  TargetWalkingSpeed: 1
+  Target: {fileID: 0}
+  Body: {fileID: 2569487017810041045}
+  forceMultiplier: 10
 --- !u!114 &6600159475849125070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,12 +809,12 @@ MonoBehaviour:
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 512
-  m_ObservationStacks: 1
+  m_ObservationStacks: 10
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
   m_StartVerticalOffset: 0
   m_EndVerticalOffset: 0
---- !u!114 &1354291084722931326
+--- !u!114 &3326504635662253055
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -802,17 +823,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2776116785044045997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81879a0d24ade9b43b94ac5f96504ad1, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
-  TargetWalkingSpeed: 1
-  Target: {fileID: 0}
-  Body: {fileID: 2569487017810041045}
-  forceMultiplier: 10
+  m_SensorName: RayPerceptionSensor2
+  m_DetectableTags: []
+  m_RaysPerDirection: 3
+  m_MaxRayDegrees: 70
+  m_SphereCastRadius: 0.1
+  m_RayLength: 20
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  m_ObservationStacks: 10
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: -0.3
+  m_EndVerticalOffset: -0.3
 --- !u!1 &2776116785327814067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1236,7 @@ GameObject:
   - component: {fileID: 2569487017810041045}
   - component: {fileID: 3443072596120771727}
   - component: {fileID: 8232104396531841305}
+  - component: {fileID: 5170022410420393635}
   m_Layer: 0
   m_Name: Body_closed.002
   m_TagString: Untagged
@@ -1284,6 +1312,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5170022410420393635
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347725848398903638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4286962094133863885, guid: 5de601a4f66ad084f8c4c0702d1557d6, type: 3}
 --- !u!1 &6794429805861678594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,7 +1462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7632786278459412011}
   m_LocalRotation: {x: -0.0074238903, y: 0.7030455, z: -0.7110665, w: 0.007508589}
-  m_LocalPosition: {x: 0.007, y: -0.342, z: 0.111}
+  m_LocalPosition: {x: 0.007, y: -0.342, z: 0.125}
   m_LocalScale: {x: 0.10000001, y: 0.10000002, z: 0.10000003}
   m_Children:
   - {fileID: 2777322380379352573}
@@ -2051,7 +2093,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 180427b7d5f099746a17a50083887f76,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 180427b7d5f099746a17a50083887f76,
         type: 3}
@@ -2201,15 +2243,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 180427b7d5f099746a17a50083887f76, type: 3}
---- !u!1 &8823431054921914735 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 180427b7d5f099746a17a50083887f76,
-    type: 3}
-  m_PrefabInstance: {fileID: 8553028496988333118}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8158498767787852757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 180427b7d5f099746a17a50083887f76,
+    type: 3}
+  m_PrefabInstance: {fileID: 8553028496988333118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8823431054921914735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 180427b7d5f099746a17a50083887f76,
     type: 3}
   m_PrefabInstance: {fileID: 8553028496988333118}
   m_PrefabAsset: {fileID: 0}

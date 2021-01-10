@@ -433,7 +433,7 @@ MonoBehaviour:
     VectorActionSize: 04000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: f40b16ccb96c438478810c081320821f, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: UGV5RT

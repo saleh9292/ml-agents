@@ -1,5 +1,5 @@
 behaviors:
-  UGV7Stairs2:
+  UGV7Stairs:
     trainer_type: ppo
     hyperparameters:
       batch_size: 2048
@@ -21,6 +21,6 @@ behaviors:
         strength: 1.0
     keep_checkpoints: 5
     max_steps: 150000000
-    time_horizon: 1000
+    time_horizon: 10000
     summary_freq: 30000
     threaded: true

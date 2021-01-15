@@ -24,7 +24,7 @@ public class PathGenrator : MonoBehaviour
         Debug.Log(Random.Range(0, pathsobjects.Length ));
         tmp = Instantiate(pathsobjects[Random.Range(0, pathsobjects.Length)]);
         tmp.transform.parent = transform;
-        tmp.transform.localPosition =  tmp2.localPosition+ tmp2.GetChild(0).localPosition;
+        tmp.transform.localPosition =  tmp2.localPosition+ tmp2.GetChild(1).localPosition;
         tmp.transform.localRotation = Quaternion.Euler(0,0, 0);
         tmp.layer = 9;
             tmp2 = tmp.transform;

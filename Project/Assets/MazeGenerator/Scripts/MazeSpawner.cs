@@ -146,7 +146,7 @@ public class MazeSpawner : MonoBehaviour {
                 float z = row * (CellHeight + (AddGaps ? .2f : 0));
                 MazeCell cell = mMazeGenerator.GetMazeCell(row, column);
                 GameObject tmp;
-                GameObject tmp2;
+                
                 tmp = Instantiate(Floor) as GameObject;
                 tmp.transform.parent = transform;
                 tmp.transform.localPosition = new Vector3(x, 0, z);

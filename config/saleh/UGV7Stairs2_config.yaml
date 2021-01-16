@@ -1,5 +1,5 @@
 behaviors:
-  UGV7Stairs:
+  UGV7Stairs2:
     trainer_type: ppo
     hyperparameters:
       batch_size: 2048

@@ -163,627 +163,510 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5889392e3f05b448a8a06c5def6c2dec, type: 3}
---- !u!1001 &263886042
+--- !u!1001 &467049779
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 54.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 3087736036627279244, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.25
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 119.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (14)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &264296023
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 125.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 72.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (9)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &314892032
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 72.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (10)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &406529346
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 54.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 72.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (8)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &647697618
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 54.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 30.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (6)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &1016411965
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 88.7
+      value: 64.95
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 30.3
+      value: 32.8
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625078, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_Name
-      value: UGV platform 7Stairs (4)
+      value: UGV platform 7Stairs2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832577519818057405, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059477423937103688, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &1018132205
+  m_SourcePrefab: {fileID: 100100000, guid: 7747c40eeb8617d4395806d867784ab9, type: 3}
+--- !u!1001 &612907848
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 3087736036627279244, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 88.7
+      value: 30.15
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625078, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_Name
-      value: UGV platform 7Stairs (2)
+      value: UGV platform 7Stairs2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832577519818057405, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059477423937103688, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &1129539546
+  m_SourcePrefab: {fileID: 100100000, guid: 7747c40eeb8617d4395806d867784ab9, type: 3}
+--- !u!1001 &791149756
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 3087736036627279244, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 110.7
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 119.9
+      value: 32.8
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625078, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_Name
-      value: UGV platform 7Stairs (15)
+      value: UGV platform 7Stairs2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832577519818057405, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059477423937103688, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &1332367814
+  m_SourcePrefab: {fileID: 100100000, guid: 7747c40eeb8617d4395806d867784ab9, type: 3}
+--- !u!1001 &841105333
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 3087736036627279244, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 125.1
+      value: 30.15
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 119.9
+      value: 32.8
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625078, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_Name
-      value: UGV platform 7Stairs (12)
+      value: UGV platform 7Stairs2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832577519818057405, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059477423937103688, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 7747c40eeb8617d4395806d867784ab9, type: 3}
+--- !u!1001 &1267824801
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3087736036627279244, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 110.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 7Stairs2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832577519818057405, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059477423937103688, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7747c40eeb8617d4395806d867784ab9, type: 3}
+--- !u!1001 &1301463882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3087736036627279244, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 32.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 7Stairs2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832577519818057405, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059477423937103688, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7747c40eeb8617d4395806d867784ab9, type: 3}
 --- !u!1 &1392866527
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,489 +877,174 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ce107b4a79bc4eef83afde434932a68, type: 3}
---- !u!1001 &1599966335
+--- !u!1001 &1654978259
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 54.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 3087736036627279244, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.25
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &1659959558
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 88.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 119.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (13)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &1681318991
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625078, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_Name
-      value: UGV platform 7Stairs
+      value: UGV platform 7Stairs2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832577519818057405, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059477423937103688, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &1714492750
+  m_SourcePrefab: {fileID: 100100000, guid: 7747c40eeb8617d4395806d867784ab9, type: 3}
+--- !u!1001 &1696355194
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 3087736036627279244, guid: 7747c40eeb8617d4395806d867784ab9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 125.1
+      value: 64.95
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625073, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 5638082452727625078, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_Name
-      value: UGV platform 7Stairs (3)
+      value: UGV platform 7Stairs2 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &2011531636
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 7832577519818057405, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.25
       objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 30.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &2031109353
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 88.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
+    - target: {fileID: 8059477423937103688, guid: 7747c40eeb8617d4395806d867784ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 72.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (11)
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
---- !u!1001 &2087196205
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 125.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 30.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625073, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638082452727625078, guid: 3d666d2957944cc46926fd6ef8180f31,
-        type: 3}
-      propertyPath: m_Name
-      value: UGV platform 7Stairs (7)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d666d2957944cc46926fd6ef8180f31, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 7747c40eeb8617d4395806d867784ab9, type: 3}
 --- !u!1 &4381525468267047208
 GameObject:
   m_ObjectHideFlags: 0

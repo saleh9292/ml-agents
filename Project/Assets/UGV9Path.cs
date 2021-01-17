@@ -1,10 +1,11 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgentsExamples;
-public class UGVAgent8Maze : Agent
+public class UGV9Path : Agent
 {
     Rigidbody rBody;
     WheelDriveSkid wheelDriveSkid;
@@ -21,9 +22,9 @@ public class UGVAgent8Maze : Agent
     OrientationCubeController m_OrientationCube;
     DirectionIndicator m_DirectionIndicator;
 
-    public MazeSpawner mazespawner;
+    public PathGenrator pathGenrator;
     float c;
-   // bool a, b, c = false;
+    // bool a, b, c = false;
     void Start()
     {
         rBody = GetComponent<Rigidbody>();
@@ -31,6 +32,8 @@ public class UGVAgent8Maze : Agent
         m_OrientationCube = GetComponentInChildren<OrientationCubeController>();
         m_DirectionIndicator = GetComponentInChildren<DirectionIndicator>();
         //mazespawner= GetComponent<mazespawner>();
+
+        pathGenrator.CreatePath();
     }
 
     public Transform Target;
@@ -42,14 +45,14 @@ public class UGVAgent8Maze : Agent
         // If the Agent fell, zero its momentum
         this.rBody.angularVelocity = Vector3.zero;
         this.rBody.velocity = Vector3.zero;
-        this.transform.localPosition = new Vector3(0, 0.7f, -3);
+        this.transform.localPosition = new Vector3(0, 0.8f, -3);
 
         this.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
         // }
 
-        mazespawner.DestroyMaze();
+        pathGenrator.DestroyPath();
 
-        mazespawner.CreateMaze();
+        pathGenrator.CreatePath();
 
         // Move the target to a new spot
         //Target.localPosition = new Vector3(Random.Range(2.0f, 9f), 0.5f, Random.Range(2.0f, 9.0f));
@@ -75,7 +78,7 @@ public class UGVAgent8Maze : Agent
         var avgVel = GetAvgVelocity();
         var velGoal = cubeForward * TargetWalkingSpeed;
         //current ragdoll velocity. normalized
-        sensor.AddObservation(Vector3.Distance(velGoal, avgVel));
+        sensor.AddObservation(Vector3.Distance(velGoal, avgVel));          //3 
         //avg body vel relative to cube
         sensor.AddObservation(m_OrientationCube.transform.InverseTransformDirection(avgVel));
         //vel goal relative to cube
@@ -137,23 +140,34 @@ public class UGVAgent8Maze : Agent
 
         if (distanceToTarget < 1.42f)
         {
-            AddReward(10f);
+            AddReward(1f);
             //EndEpisode();
             //Target.localPosition = new Vector3(Random.Range(2.0f, 9f), 0.5f, Random.Range(2.0f, 9.0f));
             //Target.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
 
-            this.transform.localPosition = new Vector3(0, 0.7f, 0);
+            bool s=pathGenrator.NextTarget();
 
-            this.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+            if (s==true)
+            {
+                AddReward(10f);
+                EndEpisode();
 
-            //Obstacle.localPosition = new Vector3(Random.Range(-5.0f, 5f), 0.5f, Random.Range(-1.0f, 1.0f));
-            //Obstacle.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+            }
 
-            distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
+           
+
+                //this.transform.localPosition = new Vector3(0, 0.7f, 0);
+
+                //this.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+
+                //Obstacle.localPosition = new Vector3(Random.Range(-5.0f, 5f), 0.5f, Random.Range(-1.0f, 1.0f));
+                //Obstacle.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+
+                distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
             intialdistanceToTarget = distanceToTargetprev;
             minD = distanceToTargetprev;
             // UpdateOrientationObjects();
-            EndEpisode();
+            //EndEpisode();
 
             //genrate new maze
             //mazespawner.DestroyMaze();
@@ -161,6 +175,15 @@ public class UGVAgent8Maze : Agent
             //mazespawner.CreateMaze();
 
         }
+
+
+        if (transform.localPosition.y < 0)
+        {
+
+            EndEpisode();
+
+        }
+
 
         // Fell off platform
         else if (Mathf.Abs(this.transform.localPosition.x) > limit || Mathf.Abs(this.transform.localPosition.z) > limit || this.transform.localPosition.y < 0)
@@ -241,27 +264,28 @@ public class UGVAgent8Maze : Agent
 
 
             minD = currentD;
-            //c = 0;
+            c = 0;
 
         }
         else
         {
-            //c += Time.deltaTime;
+            c += Time.deltaTime;
 
 
 
         }
-
-        c += Time.deltaTime;
-        if (c>=60)
+        //Debug.Log(c);
+        //Debug.Log(GetCumulativeReward());
+        //c += Time.deltaTime;
+        if (c >= 10)
         {
-            SetReward(0);
+            //SetReward(0);
             EndEpisode();
             c = 0;
 
 
 
-        }    
+        }
 
         //Debug.Log("Time: "+c +"MinD"+ minD +"currentD" +currentD);
 

@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 6482183465722760229}
   - component: {fileID: 8152211147831047535}
   - component: {fileID: 4613870721571082747}
-  m_Layer: 0
+  - component: {fileID: 7546615215585026913}
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7546615215585026913
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2829238010326736670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 6a3221679ac732c4bbae7d6f1288f3aa, type: 3}
 --- !u!1 &3582648380916516090
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8818947038312552967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5874210923079400829}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: S250
   m_TagString: Untagged
   m_Icon: {fileID: 0}

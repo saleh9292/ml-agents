@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8540860828734947603}
   - component: {fileID: 6795954859933284441}
   - component: {fileID: 8031517724520389837}
-  m_Layer: 0
+  - component: {fileID: 4540027977194832103}
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4540027977194832103
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590275920369390120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 230e676b9a4223b45979391ebad7c59a, type: 3}
 --- !u!1 &3176934719242331686
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5536290548878051599}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9148798342162460747}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: R2200R
   m_TagString: Untagged
   m_Icon: {fileID: 0}

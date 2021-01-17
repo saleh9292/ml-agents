@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 9165905550008177211}
   - component: {fileID: 6333461668041255793}
   - component: {fileID: 7404273984814305253}
-  m_Layer: 0
+  - component: {fileID: 8137829904999955526}
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6151071871934886045, guid: 71eb49b5b7537604e8818f5d426be520, type: 3}
+  - {fileID: 8482677120668192547, guid: 9497bc57c3575694891c8a9a4ee2ce9d, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8137829904999955526
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109768603126644992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 71eb49b5b7537604e8818f5d426be520, type: 3}
 --- !u!1 &5148503608164915990
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1099328514279109288}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8593961803913487203}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: R600L
   m_TagString: Untagged
   m_Icon: {fileID: 0}

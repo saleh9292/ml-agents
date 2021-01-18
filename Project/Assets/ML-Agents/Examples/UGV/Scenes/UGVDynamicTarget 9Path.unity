@@ -310,6 +310,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 9Path (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -572,6 +577,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 9Path (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -822,6 +832,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 9Path (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1071,6 +1086,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 9Path (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
@@ -1328,6 +1348,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 9Path (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1571,6 +1596,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 9Path (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
@@ -1941,6 +1971,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 9Path (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2190,6 +2225,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 9Path (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
@@ -2441,6 +2481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 9Path (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2576,6 +2621,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.57
       objectReference: {fileID: 0}
+    - target: {fileID: 880298507843042407, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1095693187388617512, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -2684,7 +2734,7 @@ PrefabInstance:
     - target: {fileID: 7023730111427112019, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.82
+      value: -1.633
       objectReference: {fileID: 0}
     - target: {fileID: 7464128697548036167, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
@@ -2696,6 +2746,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8138547483878409442, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 95aa10da3e9bb17439504c66414806b5,
+        type: 3}
     - target: {fileID: 8504841661407747721, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
       propertyPath: m_textInfo.lineCount
@@ -2897,6 +2953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 9Path (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}
@@ -3147,6 +3208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 9Path (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 10f0f63d87ce2f04babdc7a471712ddf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6024972529965647531, guid: 10f0f63d87ce2f04babdc7a471712ddf,
         type: 3}

@@ -45,9 +45,9 @@ public class UGV9Path : Agent
         // If the Agent fell, zero its momentum
         this.rBody.angularVelocity = Vector3.zero;
         this.rBody.velocity = Vector3.zero;
-        this.transform.localPosition = new Vector3(0, 0.8f, -3);
+        this.transform.localPosition = new Vector3(0, 0.8f, -1.5f);
 
-        this.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+        this.transform.rotation = Quaternion.Euler(0, 0, 0);
         // }
 
         pathGenrator.DestroyPath();
@@ -257,7 +257,7 @@ public class UGV9Path : Agent
         //AddReward(matchSpeedReward * lookAtTargetReward * 0.1f);
         currentD = Vector3.Distance(this.transform.localPosition, Target.localPosition);
 
-        if (currentD < minD)
+        if (currentD < minD -0.2)
         {
             destReward = (minD - currentD) / intialdistanceToTarget;
             AddReward(destReward);
@@ -274,7 +274,7 @@ public class UGV9Path : Agent
 
 
         }
-        //Debug.Log(c);
+        Debug.Log(c);
         //Debug.Log(GetCumulativeReward());
         //c += Time.deltaTime;
         if (c >= 10)

@@ -193,7 +193,7 @@ public class UGV10Stairs : Agent
         }
 
 
-        if (this.transform.localPosition.x <= -1.5f || this.transform.localPosition.x >= 1.5f || this.transform.localPosition.z <= -1.0f)
+        if (this.transform.localPosition.x <= -1.5f || this.transform.localPosition.x >= 1.5f || this.transform.localPosition.z <= -0.5f)
             EndEpisode();
 
         // Fell off platform
@@ -319,7 +319,7 @@ public class UGV10Stairs : Agent
         }
         //Debug.Log(d);
 
-        if (d >= 20)
+        if (d >= 15)
         {
             //SetReward(0);
             EndEpisode();

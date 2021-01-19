@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 9Path.unity
-    guid: 494e1243fa5b2ba4e878f50c2d55931c
+    path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 10Stairs.unity
+    guid: 3fcc9f42ed960274cbd00f91bc62ac58
   m_configObjects: {}

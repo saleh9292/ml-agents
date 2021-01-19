@@ -1,17 +1,22 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgentsExamples;
-public class UGV9Path : Agent
+
+public class UGV10Stairs : Agent
 {
     Rigidbody rBody;
-    WheelDriveSkid wheelDriveSkid;
+    WheelDriveSkidRotate wheelDriveSkid;
     float limit = 4f;
-    float distanceToTargetprev = 4f;
 
+    bool a, b, c = false;
+    float d;
+
+    int reached_step = 0;
+
+    float distanceToTargetprev = 4f;
     float currentD = 0f;
     float minD = 0f;
     float destReward = 0f;
@@ -21,23 +26,16 @@ public class UGV9Path : Agent
 
     OrientationCubeController m_OrientationCube;
     DirectionIndicator m_DirectionIndicator;
-
-    public PathGenrator pathGenrator;
-    float c;
-    // bool a, b, c = false;
     void Start()
     {
         rBody = GetComponent<Rigidbody>();
-        wheelDriveSkid = GetComponent<WheelDriveSkid>();
+        wheelDriveSkid = GetComponent<WheelDriveSkidRotate>();
         m_OrientationCube = GetComponentInChildren<OrientationCubeController>();
         m_DirectionIndicator = GetComponentInChildren<DirectionIndicator>();
-        //mazespawner= GetComponent<mazespawner>();
-
-        pathGenrator.CreatePath();
     }
 
     public Transform Target;
-    //public Transform Obstacle;
+    public Transform Body;
     public override void OnEpisodeBegin()
     {
         // if (Mathf.Abs(this.transform.localPosition.x) > limit || Mathf.Abs(this.transform.localPosition.z) > limit || this.transform.localPosition.y < 0)
@@ -45,28 +43,44 @@ public class UGV9Path : Agent
         // If the Agent fell, zero its momentum
         this.rBody.angularVelocity = Vector3.zero;
         this.rBody.velocity = Vector3.zero;
-        this.transform.localPosition = new Vector3(0, 0.8f, -1.5f);
+        this.transform.localPosition = new Vector3(0, 0.7f, 0);
 
         this.transform.rotation = Quaternion.Euler(0, 0, 0);
         // }
 
-        pathGenrator.DestroyPath();
-
-        pathGenrator.CreatePath();
-
         // Move the target to a new spot
-        //Target.localPosition = new Vector3(Random.Range(2.0f, 9f), 0.5f, Random.Range(2.0f, 9.0f));
-        //Target.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+        Target.localPosition = new Vector3(0,
+                                           0.5f,
+                                           3f);
 
-        //Obstacle.localPosition = new Vector3(Random.Range(-5.0f, 5f), 0.5f, Random.Range(-1.0f, 1.0f));
-        //Obstacle.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
-        //RUN maze genreation 
+
+
+
+
+        wheelDriveSkid.m_Legs[0].localRotation = Quaternion.Euler(0, 180, Random.Range(0.0f, 360.0f));
+        wheelDriveSkid.m_Legs[1].localRotation = Quaternion.Euler(0, 180, Random.Range(0.0f, 360.0f));
+        wheelDriveSkid.m_Legs[2].localRotation = Quaternion.Euler(0, 0, Random.Range(0.0f, 360.0f));
+        wheelDriveSkid.m_Legs[3].localRotation = Quaternion.Euler(0, 0, Random.Range(0.0f, 360.0f));
+
+
+
+
+
+
+
+
 
         distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
         intialdistanceToTarget = distanceToTargetprev;
         minD = distanceToTargetprev;
 
+
         UpdateOrientationObjects();
+
+        a = false;
+        b = false;
+        c = false;
+        reached_step=0;
     }
 
 
@@ -78,7 +92,7 @@ public class UGV9Path : Agent
         var avgVel = GetAvgVelocity();
         var velGoal = cubeForward * TargetWalkingSpeed;
         //current ragdoll velocity. normalized
-        sensor.AddObservation(Vector3.Distance(velGoal, avgVel));          //3 
+        sensor.AddObservation(Vector3.Distance(velGoal, avgVel));
         //avg body vel relative to cube
         sensor.AddObservation(m_OrientationCube.transform.InverseTransformDirection(avgVel));
         //vel goal relative to cube
@@ -87,6 +101,13 @@ public class UGV9Path : Agent
         sensor.AddObservation(Quaternion.FromToRotation(transform.forward, cubeForward));
 
         sensor.AddObservation(m_OrientationCube.transform.InverseTransformPoint(Target.transform.position));
+
+
+        //legs angles
+        sensor.AddObservation(wheelDriveSkid.m_Legs[0].localRotation.eulerAngles.z);
+        sensor.AddObservation(wheelDriveSkid.m_Legs[1].localRotation.eulerAngles.z);
+        sensor.AddObservation(wheelDriveSkid.m_Legs[2].localRotation.eulerAngles.z);
+        sensor.AddObservation(wheelDriveSkid.m_Legs[3].localRotation.eulerAngles.z);
 
 
 
@@ -124,9 +145,18 @@ public class UGV9Path : Agent
         wheelDriveSkid.torqueBL = controlSignal.z;
         wheelDriveSkid.torqueBR = controlSignal.w;
 
+
+        wheelDriveSkid.RotateBL = actionBuffers.ContinuousActions[4];
+        wheelDriveSkid.RotateBR = actionBuffers.ContinuousActions[5];
+        wheelDriveSkid.RotateFL = actionBuffers.ContinuousActions[6];
+        wheelDriveSkid.RotateFR = actionBuffers.ContinuousActions[7];
+
+
+
+
         // Rewards
         float distanceToTarget = Vector3.Distance(this.transform.localPosition, Target.localPosition);
-
+        //Debug.Log(distanceToTarget); 
 
         //Debug.Log(dot* matchSpeedReward);
         //Debug.Log((distanceToTargetprev - distanceToTarget) / distanceToTarget);
@@ -137,53 +167,34 @@ public class UGV9Path : Agent
         //Debug.Log(lookAtTargetReward * ((limit - distanceToTarget) / limit));
         // Reached target
         //Debug.Log(this.transform.localEulerAngles);
+        //Debug.Log(reached_step);
 
-        if (distanceToTarget < 1.42f)
+        if (distanceToTarget < 1.1f  )
         {
             AddReward(1f);
             //EndEpisode();
-            //Target.localPosition = new Vector3(Random.Range(2.0f, 9f), 0.5f, Random.Range(2.0f, 9.0f));
-            //Target.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+            Target.localPosition = Target.localPosition + new Vector3(0.0f,
+                                           0.25f,
+                                           2f);
 
-            bool s=pathGenrator.NextTarget();
+            //this.transform.localPosition = new Vector3(Random.Range(-4.0f, 4.0f), 0.7f, 0);
 
-            if (s==true)
-            {
-                AddReward(10f);
-                EndEpisode();
-
-            }
-
-           
-
-                //this.transform.localPosition = new Vector3(0, 0.7f, 0);
-
-                //this.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
-
-                //Obstacle.localPosition = new Vector3(Random.Range(-5.0f, 5f), 0.5f, Random.Range(-1.0f, 1.0f));
-                //Obstacle.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
-
-                distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
+            distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
             intialdistanceToTarget = distanceToTargetprev;
             minD = distanceToTargetprev;
+
             // UpdateOrientationObjects();
-            //EndEpisode();
 
-            //genrate new maze
-            //mazespawner.DestroyMaze();
-
-            //mazespawner.CreateMaze();
-
-        }
-
-
-        if (transform.localPosition.y < 0)
-        {
-            SetReward(0);
+            reached_step++;
+            Debug.Log(reached_step);
+            if (reached_step == 17)
             EndEpisode();
 
         }
 
+
+        if (this.transform.localPosition.x <= -1.5f || this.transform.localPosition.x >= 1.5f || this.transform.localPosition.z <= -0.5f)
+            EndEpisode();
 
         // Fell off platform
         else if (Mathf.Abs(this.transform.localPosition.x) > limit || Mathf.Abs(this.transform.localPosition.z) > limit || this.transform.localPosition.y < 0)
@@ -211,6 +222,11 @@ public class UGV9Path : Agent
         continuousActionsOut[1] = 0;
         continuousActionsOut[2] = 0;
         continuousActionsOut[3] = 0;
+        continuousActionsOut[4] = 0;
+        continuousActionsOut[5] = 0;
+        continuousActionsOut[6] = 0;
+        continuousActionsOut[7] = 0;
+
 
         continuousActionsOut[0] += Input.GetAxis("Horizontal");
         continuousActionsOut[0] += Input.GetAxis("Horizontal");
@@ -223,9 +239,36 @@ public class UGV9Path : Agent
         continuousActionsOut[2] += Input.GetAxis("Vertical");
         continuousActionsOut[3] += Input.GetAxis("Vertical");
 
+        if (Input.GetKey(KeyCode.A))
+        {
+            continuousActionsOut[4] = 1;
 
-        //Debug.Log(transform.forward);
-        //Debug.Log(Target.transform.forward);
+        }
+
+
+        if (Input.GetKey(KeyCode.S))
+        {
+
+            continuousActionsOut[5] = 1;
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+
+            continuousActionsOut[6] = 1;
+        }
+
+
+        if (Input.GetKey(KeyCode.F))
+        {
+
+            continuousActionsOut[7] = 1;
+        }
+
+
+
+        //Debug.Log(wheelDriveSkid.m_Legs[0].localRotation.eulerAngles.z);
+        //Debug.Log(Body.rotation.eulerAngles);
     }
     void UpdateOrientationObjects()
     {
@@ -253,50 +296,77 @@ public class UGV9Path : Agent
         //This reward will approach 1 if it faces the target direction perfectly and approach zero as it deviates
 
         var lookAtTargetReward = (Vector3.Dot(cubeForward, transform.forward) + 1) * .5F;
-        //Debug.Log(lookAtTargetReward);
-        //AddReward(matchSpeedReward * lookAtTargetReward * 0.1f);
+
         currentD = Vector3.Distance(this.transform.localPosition, Target.localPosition);
 
-        if (currentD < minD -0.2)
+        if (currentD < minD-0.1)
         {
             destReward = (minD - currentD) / intialdistanceToTarget;
             AddReward(destReward);
 
-
+            Debug.Log(minD);
+       
             minD = currentD;
-            c = 0;
+            d = 0;
 
         }
         else
         {
-            c += Time.deltaTime;
+            d += Time.deltaTime;
 
 
 
         }
-        Debug.Log(c);
-        //Debug.Log(GetCumulativeReward());
-        //c += Time.deltaTime;
-        if (c >= 10)
+        //Debug.Log(d);
+
+        if (d >= 15)
         {
-
+            //SetReward(0);
             EndEpisode();
-            c = 0;
-            SetReward(0);
-            
-            
+            d = 0;
 
 
 
         }
 
-        //Debug.Log("Time: "+c +"MinD"+ minD +"currentD" +currentD);
+
+        //if (a == false && this.transform.localPosition.z >= 2.5)
+        //{
+        //    AddReward(5);
+        //    a = true;
+        //}
+
+
+        //if (b == false && this.transform.localPosition.z >= 4.5)
+        //{
+        //    AddReward(5);
+        //    b = true;
+        //}
+
+
+        //if (c == false && this.transform.localPosition.z >= 6.3)
+        //{
+        //    AddReward(5);
+        //    c = true;
+        //}
+        //Debug.Log(wheelDriveSkid.m_Legs[0].localRotation.eulerAngles.z);
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[1].localRotation.eulerAngles.z);
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[2].localRotation.eulerAngles.z);
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[3].localRotation.eulerAngles.z);
+
+        //Debug.Log(lookAtTargetReward);
+        //AddReward(matchSpeedReward * lookAtTargetReward * 0.01f);
+
 
     }
 
 
     void Update()
     {
+
+
+        //Debug.Log(GetCumulativeReward());
+
         //float angle =  Input.GetAxis("Horizontal");
         //float torque = Input.GetAxis("Vertical");
     }

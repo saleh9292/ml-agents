@@ -1,4 +1,4 @@
-mlagents-learn config/saleh/UGV3_config.yaml --env=D:\UnityProjects\Ready --run-id=UGVfromcralwler --num-envs=4 --force
+mlagents-learn config/saleh/UGV2_config.yaml --env=D:\UnityProjects\Ready --run-id=UGVfromcralwler --num-envs=4 --force
 
 mlagents-learn config/saleh/UGV5RT_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV5RT --num-envs=4 --force
 
@@ -10,6 +10,13 @@ mlagents-learn config/saleh/UGV7Stairs2_config.yaml --env=D:\UnityProjects\Ready
 
 mlagents-learn config/saleh/UGV8Maze_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV8Maze --num-envs=2 --force
 
+<<<<<<< HEAD
 
 mlagents-learn config/saleh/UGV9Path_config.yaml --env=D:\Unityprojects\Ready --run-id=UGV9Path --num-envs=8 --force
 
+=======
+mlagents-learn config/saleh/UGV10Stairs_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV10Stairs --num-envs=4 
+
+
+mlagents-learn config/saleh/UGV10Stairs_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV10Stairs --num-envs=4 --time-scale=3 --force
+>>>>>>> 905e7db909e61e6dcc78dff42a0aa4eca7ebe0a5

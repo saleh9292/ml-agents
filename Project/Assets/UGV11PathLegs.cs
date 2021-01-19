@@ -5,10 +5,10 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgentsExamples;
-public class UGV9Path : Agent
+public class UGV11PathLegs : Agent
 {
     Rigidbody rBody;
-    WheelDriveSkid wheelDriveSkid;
+    WheelDriveSkidRotate wheelDriveSkid;
     float limit = 4f;
     float distanceToTargetprev = 4f;
 
@@ -28,7 +28,7 @@ public class UGV9Path : Agent
     void Start()
     {
         rBody = GetComponent<Rigidbody>();
-        wheelDriveSkid = GetComponent<WheelDriveSkid>();
+        wheelDriveSkid = GetComponent<WheelDriveSkidRotate>();
         m_OrientationCube = GetComponentInChildren<OrientationCubeController>();
         m_DirectionIndicator = GetComponentInChildren<DirectionIndicator>();
         //mazespawner= GetComponent<mazespawner>();
@@ -45,10 +45,17 @@ public class UGV9Path : Agent
         // If the Agent fell, zero its momentum
         this.rBody.angularVelocity = Vector3.zero;
         this.rBody.velocity = Vector3.zero;
-        this.transform.localPosition = new Vector3(0, 0.8f, -1.5f);
+        this.transform.localPosition = new Vector3(0, 1.1f, -1.8f);
 
         this.transform.rotation = Quaternion.Euler(0, 0, 0);
         // }
+
+
+        wheelDriveSkid.m_Legs[0].localRotation = Quaternion.Euler(0, 180, Random.Range(0.0f, 360.0f));
+        wheelDriveSkid.m_Legs[1].localRotation = Quaternion.Euler(0, 180, Random.Range(0.0f, 360.0f));
+        wheelDriveSkid.m_Legs[2].localRotation = Quaternion.Euler(0, 0, Random.Range(0.0f, 360.0f));
+        wheelDriveSkid.m_Legs[3].localRotation = Quaternion.Euler(0, 0, Random.Range(0.0f, 360.0f));
+
 
         pathGenrator.DestroyPath();
 
@@ -145,25 +152,25 @@ public class UGV9Path : Agent
             //Target.localPosition = new Vector3(Random.Range(2.0f, 9f), 0.5f, Random.Range(2.0f, 9.0f));
             //Target.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
 
-            bool s=pathGenrator.NextTarget();
+            bool s = pathGenrator.NextTarget();
 
-            if (s==true)
+            if (s == true)
             {
                 AddReward(10f);
                 EndEpisode();
 
             }
 
-           
 
-                //this.transform.localPosition = new Vector3(0, 0.7f, 0);
 
-                //this.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+            //this.transform.localPosition = new Vector3(0, 0.7f, 0);
 
-                //Obstacle.localPosition = new Vector3(Random.Range(-5.0f, 5f), 0.5f, Random.Range(-1.0f, 1.0f));
-                //Obstacle.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+            //this.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
 
-                distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
+            //Obstacle.localPosition = new Vector3(Random.Range(-5.0f, 5f), 0.5f, Random.Range(-1.0f, 1.0f));
+            //Obstacle.transform.rotation = Quaternion.Euler(0, Random.Range(0.0f, 360.0f), 0);
+
+            distanceToTargetprev = Vector3.Distance(this.transform.localPosition, Target.localPosition);
             intialdistanceToTarget = distanceToTargetprev;
             minD = distanceToTargetprev;
             // UpdateOrientationObjects();
@@ -179,7 +186,7 @@ public class UGV9Path : Agent
 
         if (transform.localPosition.y < 0)
         {
-            SetReward(0);
+
             EndEpisode();
 
         }
@@ -257,7 +264,7 @@ public class UGV9Path : Agent
         //AddReward(matchSpeedReward * lookAtTargetReward * 0.1f);
         currentD = Vector3.Distance(this.transform.localPosition, Target.localPosition);
 
-        if (currentD < minD -0.2)
+        if (currentD < minD - 0.2)
         {
             destReward = (minD - currentD) / intialdistanceToTarget;
             AddReward(destReward);
@@ -277,14 +284,11 @@ public class UGV9Path : Agent
         Debug.Log(c);
         //Debug.Log(GetCumulativeReward());
         //c += Time.deltaTime;
-        if (c >= 10)
+        if (c >= 15)
         {
-
+            //SetReward(0);
             EndEpisode();
             c = 0;
-            SetReward(0);
-            
-            
 
 
 
@@ -301,5 +305,3 @@ public class UGV9Path : Agent
         //float torque = Input.GetAxis("Vertical");
     }
 }
-
-

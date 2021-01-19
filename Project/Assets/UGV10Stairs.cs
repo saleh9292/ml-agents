@@ -186,7 +186,7 @@ public class UGV10Stairs : Agent
             // UpdateOrientationObjects();
 
             reached_step++;
-            Debug.Log(reached_step);
+            //Debug.Log(reached_step);
             if (reached_step == 17)
             EndEpisode();
 
@@ -304,7 +304,7 @@ public class UGV10Stairs : Agent
             destReward = (minD - currentD) / intialdistanceToTarget;
             AddReward(destReward);
 
-            Debug.Log(minD);
+            //Debug.Log(minD);
        
             minD = currentD;
             d = 0;

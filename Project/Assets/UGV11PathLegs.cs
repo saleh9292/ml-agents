@@ -95,7 +95,11 @@ public class UGV11PathLegs : Agent
 
         sensor.AddObservation(m_OrientationCube.transform.InverseTransformPoint(Target.transform.position));
 
-
+        //legs angles
+        sensor.AddObservation(wheelDriveSkid.m_Legs[0].localRotation.eulerAngles.z);
+        sensor.AddObservation(wheelDriveSkid.m_Legs[1].localRotation.eulerAngles.z);
+        sensor.AddObservation(wheelDriveSkid.m_Legs[2].localRotation.eulerAngles.z);
+        sensor.AddObservation(wheelDriveSkid.m_Legs[3].localRotation.eulerAngles.z);
 
     }
     // Update is called once per frame
@@ -232,7 +236,31 @@ public class UGV11PathLegs : Agent
         continuousActionsOut[1] += Input.GetAxis("Vertical");
         continuousActionsOut[2] += Input.GetAxis("Vertical");
         continuousActionsOut[3] += Input.GetAxis("Vertical");
+        if (Input.GetKey(KeyCode.A))
+        {
+            continuousActionsOut[4] = 1;
 
+        }
+
+
+        if (Input.GetKey(KeyCode.S))
+        {
+
+            continuousActionsOut[5] = 1;
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+
+            continuousActionsOut[6] = 1;
+        }
+
+
+        if (Input.GetKey(KeyCode.F))
+        {
+
+            continuousActionsOut[7] = 1;
+        }
 
         //Debug.Log(transform.forward);
         //Debug.Log(Target.transform.forward);
@@ -284,7 +312,7 @@ public class UGV11PathLegs : Agent
 
 
         }
-        Debug.Log(c);
+        //Debug.Log(c);
         //Debug.Log(GetCumulativeReward());
         //c += Time.deltaTime;
         if (c >= 15)

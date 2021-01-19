@@ -179,7 +179,7 @@ public class UGV9Path : Agent
 
         if (transform.localPosition.y < 0)
         {
-
+            SetReward(0);
             EndEpisode();
 
         }
@@ -279,9 +279,12 @@ public class UGV9Path : Agent
         //c += Time.deltaTime;
         if (c >= 10)
         {
-            //SetReward(0);
+
             EndEpisode();
             c = 0;
+            SetReward(0);
+            
+            
 
 
 

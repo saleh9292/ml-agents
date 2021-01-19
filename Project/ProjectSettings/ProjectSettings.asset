@@ -584,11 +584,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: UnityEnvironment
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: D:\Unity projects\ml-agents\Project\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: Unity Technologies
+  metroCertificateIssuer: Unity Technologies
+  metroCertificateNotAfter: 00c2bd74110cd801
   metroApplicationDescription: UnityEnvironment
   wsaImages: {}
   metroTileShortName: 

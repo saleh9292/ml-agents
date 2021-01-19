@@ -1,0 +1,11 @@
+mlagents-learn config/saleh/UGV3_config.yaml --env=D:\UnityProjects\Ready --run-id=UGVfromcralwler --num-envs=4 --force
+
+mlagents-learn config/saleh/UGV5RT_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV5RT --num-envs=4 --force
+
+
+mlagents-learn config/saleh/UGV7Stairs_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV7Stairs --num-envs=4 --force
+
+mlagents-learn config/saleh/UGV7Stairs2_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV7Stairs2 --num-envs=4 --force
+
+
+mlagents-learn config/saleh/UGV8Maze_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV8Maze --num-envs=2 --force

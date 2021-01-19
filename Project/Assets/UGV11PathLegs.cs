@@ -130,7 +130,10 @@ public class UGV11PathLegs : Agent
         wheelDriveSkid.torqueFR = controlSignal.y;
         wheelDriveSkid.torqueBL = controlSignal.z;
         wheelDriveSkid.torqueBR = controlSignal.w;
-
+        wheelDriveSkid.RotateBL = actionBuffers.ContinuousActions[4];
+        wheelDriveSkid.RotateBR = actionBuffers.ContinuousActions[5];
+        wheelDriveSkid.RotateFL = actionBuffers.ContinuousActions[6];
+        wheelDriveSkid.RotateFR = actionBuffers.ContinuousActions[7];
         // Rewards
         float distanceToTarget = Vector3.Distance(this.transform.localPosition, Target.localPosition);
 

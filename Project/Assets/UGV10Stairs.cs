@@ -228,7 +228,7 @@ public class UGV10Stairs : Agent
         continuousActionsOut[7] = 0;
 
 
-        continuousActionsOut[0] += Input.GetAxis("Horizontal");
+        
         continuousActionsOut[0] += Input.GetAxis("Horizontal");
         continuousActionsOut[1] += -Input.GetAxis("Horizontal");
         continuousActionsOut[2] += Input.GetAxis("Horizontal");

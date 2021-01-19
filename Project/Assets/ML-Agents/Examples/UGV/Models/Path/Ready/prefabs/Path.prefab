@@ -57,7 +57,8 @@ MonoBehaviour:
   - {fileID: 1387439957524961835, guid: fa19e2309d700bf44bea7a126d5cf287, type: 3}
   - {fileID: 3258228823673276014, guid: d999352dbe04d30448be9b314bd6d2f3, type: 3}
   - {fileID: 8483901204722019057, guid: d88b3061b6d1e6b4693b76ceca10b536, type: 3}
-  pathLegnth: 100
+  pathLegnth: 10
   goal: {fileID: 8070220068995271569, guid: c0953ea9f0a7f334e96f61ef4f475e29, type: 3}
   target: {fileID: 0}
   targetlocations: []
+  empty: {fileID: 5867137212070966282, guid: 6bd5d29348fbd2a42a5fa1d253ba542b, type: 3}

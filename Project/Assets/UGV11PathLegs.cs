@@ -124,20 +124,76 @@ public class UGV11PathLegs : Agent
     public float forceMultiplier = 10;
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
-        // Actions, size = 2
-        Vector4 controlSignal = Vector4.zero;
-        controlSignal.x = actionBuffers.ContinuousActions[0];
-        controlSignal.y = actionBuffers.ContinuousActions[1];
-        controlSignal.z = actionBuffers.ContinuousActions[2];
-        controlSignal.w = actionBuffers.ContinuousActions[3];
-        wheelDriveSkid.torqueFL = controlSignal.x;
-        wheelDriveSkid.torqueFR = controlSignal.y;
-        wheelDriveSkid.torqueBL = controlSignal.z;
-        wheelDriveSkid.torqueBR = controlSignal.w;
-        wheelDriveSkid.RotateBL = actionBuffers.ContinuousActions[4];
-        wheelDriveSkid.RotateBR = actionBuffers.ContinuousActions[5];
-        wheelDriveSkid.RotateFL = actionBuffers.ContinuousActions[6];
-        wheelDriveSkid.RotateFR = actionBuffers.ContinuousActions[7];
+        //// Actions, size = 2
+        //Vector4 controlSignal = Vector4.zero;
+        //controlSignal.x = actionBuffers.ContinuousActions[0];
+        //controlSignal.y = actionBuffers.ContinuousActions[1];
+        //controlSignal.z = actionBuffers.ContinuousActions[2];
+        //controlSignal.w = actionBuffers.ContinuousActions[3];
+        //wheelDriveSkid.torqueFL = controlSignal.x;
+        //wheelDriveSkid.torqueFR = controlSignal.y;
+        //wheelDriveSkid.torqueBL = controlSignal.z;
+        //wheelDriveSkid.torqueBR = controlSignal.w;
+        //wheelDriveSkid.RotateBL = actionBuffers.ContinuousActions[4];
+        //wheelDriveSkid.RotateBR = actionBuffers.ContinuousActions[5];
+        //wheelDriveSkid.RotateFL = actionBuffers.ContinuousActions[6];
+        //wheelDriveSkid.RotateFR = actionBuffers.ContinuousActions[7];
+
+
+
+
+        int whheel1 = actionBuffers.DiscreteActions[0];
+        int whheel2 = actionBuffers.DiscreteActions[1];
+        int whheel3 = actionBuffers.DiscreteActions[2];
+        int whheel4 = actionBuffers.DiscreteActions[3];
+        int leg1 = actionBuffers.DiscreteActions[4];
+        int leg2 = actionBuffers.DiscreteActions[5];
+        int leg3 = actionBuffers.DiscreteActions[6];
+        int leg4 = actionBuffers.DiscreteActions[7];
+
+
+        if (whheel1 == 1) { wheelDriveSkid.torqueFL = 1; }
+        if (whheel1 == 2) { wheelDriveSkid.torqueFL = -1; }
+        if (whheel1 == 3) { wheelDriveSkid.torqueFL = 0; }
+
+        if (whheel2 == 1) { wheelDriveSkid.torqueFR = 1; }
+        if (whheel2 == 2) { wheelDriveSkid.torqueFR = -1; }
+        if (whheel2 == 3) { wheelDriveSkid.torqueFR = 0; }
+
+        if (whheel3 == 1) { wheelDriveSkid.torqueBL = 1; }
+        if (whheel3 == 2) { wheelDriveSkid.torqueBL = -1; }
+        if (whheel3 == 3) { wheelDriveSkid.torqueBL = 0; }
+
+
+        if (whheel4 == 1) { wheelDriveSkid.torqueBR = 1; }
+        if (whheel4 == 2) { wheelDriveSkid.torqueBR = -1; }
+        if (whheel4 == 3) { wheelDriveSkid.torqueBR = 0; }
+
+
+
+        if (leg1 == 1) { wheelDriveSkid.RotateFL = 1; }
+        if (leg1 == 2) { wheelDriveSkid.RotateFL = -1; }
+        if (leg1 == 3) { wheelDriveSkid.RotateFL = 0; }
+
+        if (leg2 == 1) { wheelDriveSkid.RotateFR = 1; }
+        if (leg2 == 2) { wheelDriveSkid.RotateFR = -1; }
+        if (leg2 == 3) { wheelDriveSkid.RotateFR = 0; }
+
+        if (leg3 == 1) { wheelDriveSkid.RotateBL = 1; }
+        if (leg3 == 2) { wheelDriveSkid.RotateBL = -1; }
+        if (leg3 == 3) { wheelDriveSkid.RotateBL = 0; }
+
+
+        if (leg4 == 1) { wheelDriveSkid.RotateBR = 1; }
+        if (leg4 == 2) { wheelDriveSkid.RotateBR = -1; }
+        if (leg4 == 3) { wheelDriveSkid.RotateBR = 0; }
+
+
+
+
+
+
+
         // Rewards
         float distanceToTarget = Vector3.Distance(this.transform.localPosition, Target.localPosition);
 
@@ -220,47 +276,47 @@ public class UGV11PathLegs : Agent
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
-        var continuousActionsOut = actionsOut.ContinuousActions;
-        continuousActionsOut[0] = 0;
-        continuousActionsOut[1] = 0;
-        continuousActionsOut[2] = 0;
-        continuousActionsOut[3] = 0;
+        //var continuousActionsOut = actionsOut.ContinuousActions;
+        //continuousActionsOut[0] = 0;
+        //continuousActionsOut[1] = 0;
+        //continuousActionsOut[2] = 0;
+        //continuousActionsOut[3] = 0;
 
-        continuousActionsOut[0] += Input.GetAxis("Horizontal");
-        continuousActionsOut[0] += Input.GetAxis("Horizontal");
-        continuousActionsOut[1] += -Input.GetAxis("Horizontal");
-        continuousActionsOut[2] += Input.GetAxis("Horizontal");
-        continuousActionsOut[3] += -Input.GetAxis("Horizontal");
+        //continuousActionsOut[0] += Input.GetAxis("Horizontal");
+        //continuousActionsOut[0] += Input.GetAxis("Horizontal");
+        //continuousActionsOut[1] += -Input.GetAxis("Horizontal");
+        //continuousActionsOut[2] += Input.GetAxis("Horizontal");
+        //continuousActionsOut[3] += -Input.GetAxis("Horizontal");
 
-        continuousActionsOut[0] += Input.GetAxis("Vertical");
-        continuousActionsOut[1] += Input.GetAxis("Vertical");
-        continuousActionsOut[2] += Input.GetAxis("Vertical");
-        continuousActionsOut[3] += Input.GetAxis("Vertical");
-        if (Input.GetKey(KeyCode.A))
-        {
-            continuousActionsOut[4] = 1;
+        //continuousActionsOut[0] += Input.GetAxis("Vertical");
+        //continuousActionsOut[1] += Input.GetAxis("Vertical");
+        //continuousActionsOut[2] += Input.GetAxis("Vertical");
+        //continuousActionsOut[3] += Input.GetAxis("Vertical");
+        //if (Input.GetKey(KeyCode.A))
+        //{
+        //    continuousActionsOut[4] = 1;
 
-        }
-
-
-        if (Input.GetKey(KeyCode.S))
-        {
-
-            continuousActionsOut[5] = 1;
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-
-            continuousActionsOut[6] = 1;
-        }
+        //}
 
 
-        if (Input.GetKey(KeyCode.F))
-        {
+        //if (Input.GetKey(KeyCode.S))
+        //{
 
-            continuousActionsOut[7] = 1;
-        }
+        //    continuousActionsOut[5] = 1;
+        //}
+
+        //if (Input.GetKey(KeyCode.D))
+        //{
+
+        //    continuousActionsOut[6] = 1;
+        //}
+
+
+        //if (Input.GetKey(KeyCode.F))
+        //{
+
+        //    continuousActionsOut[7] = 1;
+        //}
 
         //Debug.Log(transform.forward);
         //Debug.Log(Target.transform.forward);

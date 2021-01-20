@@ -1805,7 +1805,7 @@ BoxCollider:
   m_GameObject: {fileID: 5638082450872142636}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2532,7 +2532,7 @@ PrefabInstance:
     - target: {fileID: 2777322381031018009, guid: 7a08b5b96979aa84f933dfe2c0f794e1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.573
       objectReference: {fileID: 0}
     - target: {fileID: 2777322381031018009, guid: 7a08b5b96979aa84f933dfe2c0f794e1,
         type: 3}
@@ -2542,7 +2542,7 @@ PrefabInstance:
     - target: {fileID: 2777322381031018009, guid: 7a08b5b96979aa84f933dfe2c0f794e1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 2777322381031018009, guid: 7a08b5b96979aa84f933dfe2c0f794e1,
         type: 3}
@@ -2578,6 +2578,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964196257596155560, guid: 7a08b5b96979aa84f933dfe2c0f794e1,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 917e027bef7020547816586ffd4e269d,
+        type: 3}
+    - target: {fileID: 3964196257596155560, guid: 7a08b5b96979aa84f933dfe2c0f794e1,
+        type: 3}
+      propertyPath: m_BehaviorName
+      value: UGV10Stairs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a08b5b96979aa84f933dfe2c0f794e1, type: 3}

@@ -122,6 +122,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &138208591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 232.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 192.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1001 &193531851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -163,6 +232,282 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5889392e3f05b448a8a06c5def6c2dec, type: 3}
+--- !u!1001 &269431480
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
+--- !u!1001 &284201262
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 270.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
+--- !u!1001 &322481172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 270.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
+--- !u!1001 &395942096
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 152.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1001 &453627411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -230,46 +575,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 10Stairs
       objectReference: {fileID: 0}
-    - target: {fileID: 8980748122409289615, guid: a705a35aea1e036489aab75ff5b3921c,
-        type: 3}
-      propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980748122409289615, guid: a705a35aea1e036489aab75ff5b3921c,
-        type: 3}
-      propertyPath: m_BrainParameters.VectorActionSize.Array.data[1]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980748122409289615, guid: a705a35aea1e036489aab75ff5b3921c,
-        type: 3}
-      propertyPath: m_BrainParameters.VectorActionSize.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980748122409289615, guid: a705a35aea1e036489aab75ff5b3921c,
-        type: 3}
-      propertyPath: m_BrainParameters.VectorActionSize.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980748122409289615, guid: a705a35aea1e036489aab75ff5b3921c,
-        type: 3}
-      propertyPath: m_BrainParameters.VectorActionSize.Array.data[4]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980748122409289615, guid: a705a35aea1e036489aab75ff5b3921c,
-        type: 3}
-      propertyPath: m_BrainParameters.VectorActionSize.Array.data[5]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980748122409289615, guid: a705a35aea1e036489aab75ff5b3921c,
-        type: 3}
-      propertyPath: m_BrainParameters.VectorActionSize.Array.data[6]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980748122409289615, guid: a705a35aea1e036489aab75ff5b3921c,
-        type: 3}
-      propertyPath: m_BrainParameters.VectorActionSize.Array.data[7]
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!4 &1007459226 stripped
@@ -278,6 +583,213 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 453627411}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1218321713
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 104.80001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 192.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
+--- !u!1001 &1274962245
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 211.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
+--- !u!1001 &1337778095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 173.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 192.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1 &1392866527
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +897,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1007459226}
   smoothingTime: 0
+--- !u!1001 &1465768634
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 291.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 192.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1001 &1481808307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -488,6 +1069,351 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ce107b4a79bc4eef83afde434932a68, type: 3}
+--- !u!1001 &1564735051
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 152.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
+--- !u!1001 &1710765738
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 84.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
+--- !u!1001 &1746245190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 84.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
+--- !u!1001 &1868940520
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 192.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
+--- !u!1001 &2117645446
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 211.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625073, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_Name
+      value: UGV platform 10Stairs (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1 &4381525468267047208
 GameObject:
   m_ObjectHideFlags: 0

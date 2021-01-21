@@ -89,7 +89,7 @@ public class PathGenrator : MonoBehaviour
 
         target.transform.position = targetlocations[n].position + new Vector3(0, 1, 0);
 
-
+        NextTarget();
     }
 
 

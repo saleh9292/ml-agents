@@ -45,7 +45,7 @@ public class UGV11PathLegs : Agent
         // If the Agent fell, zero its momentum
         this.rBody.angularVelocity = Vector3.zero;
         this.rBody.velocity = Vector3.zero;
-        this.transform.localPosition = new Vector3(0, 1.1f, -1.8f);
+        this.transform.localPosition = new Vector3(0, 1.1f, 0f);
 
         this.transform.rotation = Quaternion.Euler(0, 0, 0);
         // }

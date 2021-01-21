@@ -189,6 +189,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 10Stairs (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1001 &193531851
@@ -299,6 +304,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 10Stairs (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1001 &395942096
@@ -367,6 +377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 10Stairs (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
@@ -512,6 +527,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 10Stairs (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1001 &1274962245
@@ -580,6 +600,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 10Stairs (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
@@ -650,6 +675,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 10Stairs (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1 &1392866527
@@ -665,6 +695,7 @@ GameObject:
   - component: {fileID: 1392866529}
   - component: {fileID: 1392866528}
   - component: {fileID: 1392866533}
+  - component: {fileID: 1392866530}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -688,6 +719,24 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392866527}
   m_Enabled: 1
+--- !u!114 &1392866530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392866527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d7b886385fb48b999bc3fbc41bc181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSpeed: 5
+  shiftAdd: 10
+  maxShift: 1000
+  camSens: 0.25
+  rotateOnlyIfMousedown: 1
+  movementStaysFlat: 1
 --- !u!20 &1392866531
 Camera:
   m_ObjectHideFlags: 0
@@ -738,8 +787,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392866527}
-  m_LocalRotation: {x: 0.11144648, y: 0.4815989, z: -0.061858933, w: 0.86707306}
-  m_LocalPosition: {x: -6.520376, y: 1.8936219, z: -1.7663908}
+  m_LocalRotation: {x: 0.19234031, y: 0.3117463, z: -0.06457693, w: 0.9282507}
+  m_LocalPosition: {x: -4.104342, y: 2.6408844, z: -3.9587793}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -752,7 +801,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392866527}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec40c70d5160b47cd8deaab79e24892c, type: 3}
   m_Name: 
@@ -825,6 +874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 10Stairs (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
@@ -998,6 +1052,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 10Stairs (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}
 --- !u!1001 &1868940520
@@ -1066,6 +1125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 10Stairs (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: a705a35aea1e036489aab75ff5b3921c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a705a35aea1e036489aab75ff5b3921c, type: 3}

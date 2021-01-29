@@ -750,7 +750,7 @@ MonoBehaviour:
   RotateBL: 0
   RotateBR: 0
   maxTorque: 75
-  maxRotationspeed: 100
+  maxRotationspeed: 1
   criticalSpeed: 5
   stepsBelow: 5
   stepsAbove: 1

@@ -5,10 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 10Stairs.unity
-    guid: 3fcc9f42ed960274cbd00f91bc62ac58
   - enabled: 1
-    path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 11PathLegs.unity
-    guid: f495a934fb0ddbc44bcafc842763d9b9
+    path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 12PathLegsObstacles.unity
+    guid: 3a389afff851a9d4a829b7f1d5de49a0
   m_configObjects: {}

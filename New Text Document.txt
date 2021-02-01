@@ -23,4 +23,9 @@ mlagents-learn config/saleh/UGV10Stairs_config.yaml --env=D:\UnityProjects\Ready
 
 mlagents-learn config/saleh/UGV11PathLegs_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV11PathLegs --num-envs=4 --time-scale=3 --force
 
-mlagents-learn config/saleh/UGV12PathLegsObstacles_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV12PathLegsObstacles4 --initialize-from=UGV12PathLegsObstacles3 --num-envs=4 --time-scale=3 --force
+mlagents-learn config/saleh/UGV12PathLegsObstacles_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV12PathLegsObstacles4 --initialize-from=UGV12PathLegsObstacles3 --num-envs=4 --time-scale=3 
+mlagents-learn config/saleh/UGV12PathLegsObstacles_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV12PathLegsObstacles4 --initialize-from=UGV12PathLegsObstacles3 --num-envs=4 --time-scale=5 
+
+
+
+mlagents-learn config/saleh/UGV13PathLegsObstaclesDiff_config.yaml --env=D:\UnityProjects\Ready --run-id=UGV13PathLegsObstaclesDiff --num-envs=4 --time-scale=5 

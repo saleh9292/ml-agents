@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 12PathLegsObstacles.unity
     guid: 3a389afff851a9d4a829b7f1d5de49a0
+  - enabled: 1
+    path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 13PathLegsObstaclesDiff.unity
+    guid: eebde697d4c2608478a1618a0b292783
   m_configObjects: {}

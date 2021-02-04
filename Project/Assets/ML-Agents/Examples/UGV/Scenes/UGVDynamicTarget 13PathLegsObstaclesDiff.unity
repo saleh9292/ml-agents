@@ -214,6 +214,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 13PathLegsObstaclesDiff (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6574582507585189529, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}
       propertyPath: m_Mesh
@@ -379,6 +384,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 13PathLegsObstaclesDiff (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6574582507585189529, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}
       propertyPath: m_Mesh
@@ -477,6 +487,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 13PathLegsObstaclesDiff (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6574582507585189529, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}
@@ -583,6 +598,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 13PathLegsObstaclesDiff (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6574582507585189529, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}
       propertyPath: m_Mesh
@@ -597,6 +617,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1366288801532023065, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_BehaviorType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5638082452727625073, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}
       propertyPath: m_RootOrder
@@ -863,6 +888,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 13PathLegsObstaclesDiff (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6574582507585189529, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}
       propertyPath: m_Mesh
@@ -961,6 +991,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 13PathLegsObstaclesDiff (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6574582507585189529, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}
@@ -1061,6 +1096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 13PathLegsObstaclesDiff (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6574582507585189529, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}
       propertyPath: m_Mesh
@@ -1160,6 +1200,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGV platform 13PathLegsObstaclesDiff (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6574582507585189529, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}
       propertyPath: m_Mesh
@@ -1258,6 +1303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UGV platform 13PathLegsObstaclesDiff (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638082452727625078, guid: 938878742a11c1c4a9a2ecd879b0ab16,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6574582507585189529, guid: 938878742a11c1c4a9a2ecd879b0ab16,
         type: 3}

@@ -31,7 +31,7 @@ public class UGVAgent1Log : Agent
         //        "Wheel4",
         //    }
         //);
-        _filePath=CSVManager.CreateReport();
+        _filePath=CSVManager.CreateReport(GetInstanceID().ToString());
 
     }
 
@@ -126,28 +126,28 @@ public class UGVAgent1Log : Agent
         }
         //AddReward(-0.01f);
 
-        CSVManager.AppendToReport(
-            new string[15] {
-                epcount.ToString(),
-                GetCumulativeReward().ToString(),
-                controlSignal.x.ToString(),
-                controlSignal.y.ToString(),
-                controlSignal.z.ToString(),
-                controlSignal.w.ToString(),
-                Target.localPosition.x.ToString(),
-                Target.localPosition.y.ToString(),
-                Target.localPosition.z.ToString(),
-                this.transform.localPosition.x.ToString(),
-                this.transform.localPosition.y.ToString(),
-                this.transform.localPosition.z.ToString(),
-                this.transform.InverseTransformDirection(rBody.velocity).x.ToString(),
-                this.transform.InverseTransformDirection(rBody.velocity).y.ToString(),
-                this.transform.InverseTransformDirection(rBody.velocity).z.ToString()
+        //CSVManager.AppendToReport(
+        //    new string[15] {
+        //        epcount.ToString(),
+        //        GetCumulativeReward().ToString(),
+        //        controlSignal.x.ToString(),
+        //        controlSignal.y.ToString(),
+        //        controlSignal.z.ToString(),
+        //        controlSignal.w.ToString(),
+        //        Target.localPosition.x.ToString(),
+        //        Target.localPosition.y.ToString(),
+        //        Target.localPosition.z.ToString(),
+        //        this.transform.localPosition.x.ToString(),
+        //        this.transform.localPosition.y.ToString(),
+        //        this.transform.localPosition.z.ToString(),
+        //        this.transform.InverseTransformDirection(rBody.velocity).x.ToString(),
+        //        this.transform.InverseTransformDirection(rBody.velocity).y.ToString(),
+        //        this.transform.InverseTransformDirection(rBody.velocity).z.ToString()
 
 
-            },
-            _filePath
-            );
+        //    },
+        //    _filePath
+        //    );
 
 
 

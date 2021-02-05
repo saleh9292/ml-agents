@@ -24,6 +24,17 @@ public class UGV12PathLegsObstacles : Agent
 
     public PathObstaclesGenrator pathGenrator;
     float c;
+    public bool logdata = false;
+
+
+    string _filePath;
+    int epcount = 0;
+    int stepscount2 = 0;
+
+    List<string[]> mystringlist;
+
+    System.DateTime time1 = System.DateTime.Now;
+    System.DateTime time2 = System.DateTime.Now;
     // bool a, b, c = false;
     void Start()
     {
@@ -32,8 +43,14 @@ public class UGV12PathLegsObstacles : Agent
         m_OrientationCube = GetComponentInChildren<OrientationCubeController>();
         m_DirectionIndicator = GetComponentInChildren<DirectionIndicator>();
         //mazespawner= GetComponent<mazespawner>();
-
+        
         pathGenrator.CreatePath();
+        _filePath = CSVManager.CreateReport(transform.parent.name);
+        time2 = System.DateTime.Now;
+        //epcount++;
+        mystringlist = new List<string[]>();
+        mystringlist.Clear();
+
     }
 
     public Transform Target;
@@ -74,6 +91,19 @@ public class UGV12PathLegsObstacles : Agent
         minD = distanceToTargetprev;
 
         UpdateOrientationObjects();
+        epcount++;
+
+        if (mystringlist.Count >1)
+        CSVManager.AppendToReport(mystringlist, _filePath);
+
+
+
+
+
+
+
+
+
     }
 
 
@@ -262,6 +292,88 @@ public class UGV12PathLegsObstacles : Agent
             //EndEpisode();
         }
         //AddReward(-0.01f);
+
+        var cubeForward = m_OrientationCube.transform.forward;
+
+        var avgVel = GetAvgVelocity();
+        var velGoal = cubeForward * TargetWalkingSpeed;
+        ////current ragdoll velocity. normalized
+        //sensor.AddObservation(Vector3.Distance(velGoal, avgVel));          //3 
+        ////avg body vel relative to cube
+        //sensor.AddObservation(m_OrientationCube.transform.InverseTransformDirection(avgVel));
+        ////vel goal relative to cube
+        //sensor.AddObservation(m_OrientationCube.transform.InverseTransformDirection(velGoal));
+        ////rotation delta
+        //sensor.AddObservation(Quaternion.FromToRotation(transform.forward, cubeForward));
+
+        //sensor.AddObservation(m_OrientationCube.transform.InverseTransformPoint(Target.transform.position));
+
+        ////legs angles
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[0].localRotation.eulerAngles.z);
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[1].localRotation.eulerAngles.z);
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[2].localRotation.eulerAngles.z);
+        //sensor.AddObservation(wheelDriveSkid.m_Legs[3].localRotation.eulerAngles.z);
+        stepscount2++;
+        time1 = System.DateTime.Now;
+        if (logdata)
+        {
+
+
+            mystringlist.Add(new string[] {
+                (time1-time2).TotalMilliseconds.ToString(),
+                epcount.ToString(),
+                CompletedEpisodes.ToString(),
+                Academy.Instance.EpisodeCount.ToString(),
+                Academy.Instance.TotalStepCount.ToString(),
+                Academy.Instance.StepCount.ToString(),
+                stepscount2.ToString(),
+                GetCumulativeReward().ToString(),
+                actionBuffers.DiscreteActions[0].ToString(),
+                actionBuffers.DiscreteActions[1].ToString(),
+                actionBuffers.DiscreteActions[2].ToString(),
+                actionBuffers.DiscreteActions[3].ToString(),
+                actionBuffers.DiscreteActions[4].ToString(),
+                actionBuffers.DiscreteActions[5].ToString(),
+                actionBuffers.DiscreteActions[6].ToString(),
+                actionBuffers.DiscreteActions[7].ToString(),
+                Vector3.Distance(velGoal, avgVel).ToString(),
+                m_OrientationCube.transform.InverseTransformDirection(avgVel).x.ToString(),
+                m_OrientationCube.transform.InverseTransformDirection(avgVel).y.ToString(),
+                m_OrientationCube.transform.InverseTransformDirection(avgVel).z.ToString(),
+                m_OrientationCube.transform.InverseTransformDirection(velGoal).x.ToString(),
+                m_OrientationCube.transform.InverseTransformDirection(velGoal).y.ToString(),
+                m_OrientationCube.transform.InverseTransformDirection(velGoal).z.ToString(),
+                Quaternion.FromToRotation(transform.forward, cubeForward).x.ToString(),
+                Quaternion.FromToRotation(transform.forward, cubeForward).y.ToString(),
+                Quaternion.FromToRotation(transform.forward, cubeForward).z.ToString(),
+                Quaternion.FromToRotation(transform.forward, cubeForward).w.ToString(),
+                m_OrientationCube.transform.InverseTransformPoint(Target.transform.position).x.ToString(),
+                m_OrientationCube.transform.InverseTransformPoint(Target.transform.position).y.ToString(),
+                m_OrientationCube.transform.InverseTransformPoint(Target.transform.position).z.ToString(),
+                wheelDriveSkid.m_Legs[0].localRotation.eulerAngles.z.ToString(),
+                wheelDriveSkid.m_Legs[1].localRotation.eulerAngles.z.ToString(),
+                wheelDriveSkid.m_Legs[2].localRotation.eulerAngles.z.ToString(),
+                wheelDriveSkid.m_Legs[3].localRotation.eulerAngles.z.ToString(),
+                Academy.Instance.EnvironmentParameters.Keys().Count.ToString()
+
+
+
+            });
+
+            time2 = System.DateTime.Now;
+
+
+               // _filePath;
+
+
+
+
+
+
+
+        }
+
+
     }
 
     public float GetMatchingVelocityReward(Vector3 velocityGoal, Vector3 actualVelocity)
@@ -388,6 +500,7 @@ public class UGV12PathLegsObstacles : Agent
 
     void Update()
     {
+        
         //float angle =  Input.GetAxis("Horizontal");
         //float torque = Input.GetAxis("Vertical");
     }

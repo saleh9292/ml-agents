@@ -755,9 +755,10 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 500
   TargetWalkingSpeed: 1
   pathGenrator: {fileID: 0}
+  logdata: 1
   Target: {fileID: 0}
   forceMultiplier: 10
 --- !u!1 &2776116785327814067

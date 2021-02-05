@@ -1,9 +1,10 @@
 using UnityEngine;
 using System.IO;
+using System.Collections.Generic;
 
 public static class CSVManager
 {
-
+    private static string uuid = System.Guid.NewGuid().ToString();
     private static string reportDirectoryName = "Report";
     private static string reportFileName = "report.csv";
     private static string reportSeparator = ",";
@@ -29,30 +30,53 @@ public static class CSVManager
 
     #region Interactions
 
-    public static void AppendToReport(string[] strings , string filePath)
+    public static void AppendToReport(List<string[]> strings , string filePath)
     {
         //VerifyDirectory();
         //VerifyFile();
-        using (StreamWriter sw = File.AppendText(filePath))
+        foreach (string[] s in strings)
+        { 
+            using (StreamWriter sw = File.AppendText(filePath))
         {
+            
             string finalString = GetTimeStamp();
-            for (int i = 0; i < strings.Length; i++)
+            for (int i = 0; i < s.Length; i++)
             {
                 if (finalString != "")
                 {
                     finalString += reportSeparator;
                 }
-                finalString += strings[i];
+                finalString += s[i];
             }
             finalString += reportSeparator ;
             sw.WriteLine(finalString);
         }
+        }
     }
+    //public static void AppendToReport(string[] strings, string filePath)
+    //{
+    //    //VerifyDirectory();
+    //    //VerifyFile();
+    //    using (StreamWriter sw = File.AppendText(filePath))
+    //    {
+    //        string finalString = GetTimeStamp();
+    //        for (int i = 0; i < strings.Length; i++)
+    //        {
+    //            if (finalString != "")
+    //            {
+    //                finalString += reportSeparator;
+    //            }
+    //            finalString += strings[i];
+    //        }
+    //        finalString += reportSeparator;
+    //        sw.WriteLine(finalString);
+    //    }
+    //}
 
-    public static string CreateReport()
+    public static string CreateReport(string agentname)
     {
         string filepath;
-        filepath = GetFilePath();
+        filepath = GetFilePath(agentname);
         VerifyDirectory();
         using (StreamWriter sw = File.CreateText(filepath))
         {
@@ -85,14 +109,14 @@ public static class CSVManager
         }
     }
 
-    static void VerifyFile()
-    {
-        string file = GetFilePath();
-        if (!File.Exists(file))
-        {
-            CreateReport();
-        }
-    }
+    //static void VerifyFile()
+    //{
+    //    string file = GetFilePath();
+    //    if (!File.Exists(file))
+    //    {
+    //        CreateReport();
+    //    }
+    //}
 
     #endregion
 
@@ -101,12 +125,12 @@ public static class CSVManager
 
     static string GetDirectoryPath()
     {
-        return Application.dataPath + "/" + reportDirectoryName;
+        return Application.dataPath + "/" + reportDirectoryName + "/" + uuid;
     }
 
-    static string GetFilePath()
+    static string GetFilePath(string agentname)
     {
-        return GetDirectoryPath() + "/" + System.DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss") + ".csv";
+        return GetDirectoryPath() + "/" + System.DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss--") + agentname+ uuid + ".csv";
     }
 
     static string GetTimeStamp()

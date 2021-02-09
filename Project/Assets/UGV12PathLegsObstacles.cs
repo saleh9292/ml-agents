@@ -95,6 +95,7 @@ public class UGV12PathLegsObstacles : Agent
 
         if (mystringlist.Count >1)
         CSVManager.AppendToReport(mystringlist, _filePath);
+        mystringlist.Clear();
 
 
 
@@ -313,6 +314,11 @@ public class UGV12PathLegsObstacles : Agent
         //sensor.AddObservation(wheelDriveSkid.m_Legs[1].localRotation.eulerAngles.z);
         //sensor.AddObservation(wheelDriveSkid.m_Legs[2].localRotation.eulerAngles.z);
         //sensor.AddObservation(wheelDriveSkid.m_Legs[3].localRotation.eulerAngles.z);
+        
+       // Debug.Log(GetInstanceID().ToString() + " "+ CompletedEpisodes + "     " + CompletedEpisodes.ToString());
+
+        
+
         stepscount2++;
         time1 = System.DateTime.Now;
         if (logdata)
@@ -321,12 +327,9 @@ public class UGV12PathLegsObstacles : Agent
 
             mystringlist.Add(new string[] {
                 (time1-time2).TotalMilliseconds.ToString(),
-                epcount.ToString(),
-                CompletedEpisodes.ToString(),
-                Academy.Instance.EpisodeCount.ToString(),
+                StepCount.ToString(),
                 Academy.Instance.TotalStepCount.ToString(),
-                Academy.Instance.StepCount.ToString(),
-                stepscount2.ToString(),
+                CompletedEpisodes.ToString(),                
                 GetCumulativeReward().ToString(),
                 actionBuffers.DiscreteActions[0].ToString(),
                 actionBuffers.DiscreteActions[1].ToString(),
@@ -354,7 +357,7 @@ public class UGV12PathLegsObstacles : Agent
                 wheelDriveSkid.m_Legs[1].localRotation.eulerAngles.z.ToString(),
                 wheelDriveSkid.m_Legs[2].localRotation.eulerAngles.z.ToString(),
                 wheelDriveSkid.m_Legs[3].localRotation.eulerAngles.z.ToString(),
-                Academy.Instance.EnvironmentParameters.Keys().Count.ToString()
+              
 
 
 
@@ -486,8 +489,8 @@ public class UGV12PathLegsObstacles : Agent
         if (c >= 15)
         {
             //SetReward(0);
-            EndEpisode();
-            c = 0;
+            //EndEpisode();
+            //c = 0;
 
 
 

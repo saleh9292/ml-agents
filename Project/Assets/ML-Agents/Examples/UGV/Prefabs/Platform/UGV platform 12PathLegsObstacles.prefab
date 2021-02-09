@@ -1518,7 +1518,7 @@ MonoBehaviour:
   - {fileID: 1387439957524961835, guid: fa19e2309d700bf44bea7a126d5cf287, type: 3}
   - {fileID: 3258228823673276014, guid: d999352dbe04d30448be9b314bd6d2f3, type: 3}
   - {fileID: 8483901204722019057, guid: d88b3061b6d1e6b4693b76ceca10b536, type: 3}
-  pathLegnth: 10
+  pathLegnth: 1
   goal: {fileID: 8070220068995271569, guid: c0953ea9f0a7f334e96f61ef4f475e29, type: 3}
   target: {fileID: 5638082450872142636}
   targetlocations: []
@@ -1532,6 +1532,7 @@ MonoBehaviour:
   - {fileID: 2210853582366011638, guid: 99b90027b0dc0a4439ab81b4e06e5795, type: 3}
   - {fileID: 2210853582366011638, guid: b74a9f0f36e921d44a0729ff6014ed5c, type: 3}
   - {fileID: 2210853582366011638, guid: 9d7edfe31cb7c7c44a557884274a1c6b, type: 3}
+  obstacles: 0
 --- !u!1001 &7655128261087731034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1610,6 +1611,11 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 5638082450872142632}
+    - target: {fileID: 8378244804755851555, guid: 1eb0e6f3f712ec54aa5e54f3af5be0cd,
+        type: 3}
+      propertyPath: MaxStep
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 8378244804755851555, guid: 1eb0e6f3f712ec54aa5e54f3af5be0cd,
         type: 3}
       propertyPath: pathGenrator

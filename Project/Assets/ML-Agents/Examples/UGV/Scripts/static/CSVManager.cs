@@ -8,22 +8,40 @@ public static class CSVManager
     private static string reportDirectoryName = "Report";
     private static string reportFileName = "report.csv";
     private static string reportSeparator = ",";
-    private static string[] reportHeaders = new string[15]{
-                "episcodecount",
-                "reward",
-                "WheelAction1",
-                "WheelAction2",
-                "WheelAction3",
-                "WheelAction4",
-                "Targetlocalpostionx",
-                "Targetlocalpostiony",
-                "Targetlocalpostionz",
-                "Vlocalpostionx",
-                "Vlocalpostiony",
-                "Vlocalpostionz",
-                "Vvelocityx",
-                "Vvelocityy",
-                "Vvelocityz",
+    private static string[] reportHeaders = new string[]{
+                "deltatime",
+                "stepcount_currentEP",
+                "totalstepcount",
+                "completedEpisodes",
+                "cumaltiveRewardInCurrentEP",
+                "wheelAction1",
+                "wheelAction2",
+                "wheelAction3",
+                "wheelAction4",
+                "legAction1",
+                "legAction2",
+                "legAction3",
+                "legAction4",
+                "velcoityToGoal",
+                "vehicleVelocity_x",
+                "vehicleVelocity_y",
+                "vehicleVelocity_z",
+                "goalVelocity_x",
+                "goalVelocity_y",
+                "goalVelocity_z",
+                "vehicleRotation_x",
+                "vehicleRotation_y",
+                "vehicleRotation_z",
+                "vehicleRotation_w",
+                "TargetRealtivePosition_x",
+                "TargetRealtivePosition_y",
+                "TargetRealtivePosition_z",
+                "legRotation_1",
+                "legRotation_2",
+                "legRotation_3",
+                "legRotation_4",
+         
+
 
             };
     private static string timeStampHeader = "time stamp";

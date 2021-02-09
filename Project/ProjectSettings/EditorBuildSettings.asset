@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTargetLog.unity
-    guid: bce4a2be86a79194dad05375859b402e
+    path: Assets/ML-Agents/Examples/UGV/Scenes/UGVDynamicTarget 12PathLegsObstacles.unity
+    guid: 3a389afff851a9d4a829b7f1d5de49a0
   m_configObjects: {}

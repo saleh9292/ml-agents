@@ -36,6 +36,8 @@ public class UGV12PathLegsObstacles : Agent
     System.DateTime time1 = System.DateTime.Now;
     System.DateTime time2 = System.DateTime.Now;
     // bool a, b, c = false;
+
+    float maxTorque=100;
     void Start()
     {
         rBody = GetComponent<Rigidbody>();
@@ -50,7 +52,7 @@ public class UGV12PathLegsObstacles : Agent
         //epcount++;
         mystringlist = new List<string[]>();
         mystringlist.Clear();
-
+        maxTorque=wheelDriveSkid.maxTorque;
     }
 
     public Transform Target;
@@ -183,41 +185,41 @@ public class UGV12PathLegsObstacles : Agent
         int leg4 = actionBuffers.DiscreteActions[7];
 
 
-        if (whheel1 == 1) { wheelDriveSkid.torqueFL = 1; }
-        if (whheel1 == 2) { wheelDriveSkid.torqueFL = -1; }
-        if (whheel1 == 3) { wheelDriveSkid.torqueFL = 0; }
+        if (whheel1 == 2) { wheelDriveSkid.torqueFL = 1; }
+        if (whheel1 == 1) { wheelDriveSkid.torqueFL = -1; }
+        if (whheel1 == 0) { wheelDriveSkid.torqueFL = 0; }
 
-        if (whheel2 == 1) { wheelDriveSkid.torqueFR = 1; }
-        if (whheel2 == 2) { wheelDriveSkid.torqueFR = -1; }
-        if (whheel2 == 3) { wheelDriveSkid.torqueFR = 0; }
+        if (whheel2 == 2) { wheelDriveSkid.torqueFR = 1; }
+        if (whheel2 == 1) { wheelDriveSkid.torqueFR = -1; }
+        if (whheel2 == 0) { wheelDriveSkid.torqueFR = 0; }
 
-        if (whheel3 == 1) { wheelDriveSkid.torqueBL = 1; }
-        if (whheel3 == 2) { wheelDriveSkid.torqueBL = -1; }
-        if (whheel3 == 3) { wheelDriveSkid.torqueBL = 0; }
-
-
-        if (whheel4 == 1) { wheelDriveSkid.torqueBR = 1; }
-        if (whheel4 == 2) { wheelDriveSkid.torqueBR = -1; }
-        if (whheel4 == 3) { wheelDriveSkid.torqueBR = 0; }
+        if (whheel3 == 2) { wheelDriveSkid.torqueBL = 1; }
+        if (whheel3 == 1) { wheelDriveSkid.torqueBL = -1; }
+        if (whheel3 == 0) { wheelDriveSkid.torqueBL = 0; }
 
 
-
-        if (leg1 == 1) { wheelDriveSkid.RotateFL = 1; }
-        if (leg1 == 2) { wheelDriveSkid.RotateFL = -1; }
-        if (leg1 == 3) { wheelDriveSkid.RotateFL = 0; }
-
-        if (leg2 == 1) { wheelDriveSkid.RotateFR = 1; }
-        if (leg2 == 2) { wheelDriveSkid.RotateFR = -1; }
-        if (leg2 == 3) { wheelDriveSkid.RotateFR = 0; }
-
-        if (leg3 == 1) { wheelDriveSkid.RotateBL = 1; }
-        if (leg3 == 2) { wheelDriveSkid.RotateBL = -1; }
-        if (leg3 == 3) { wheelDriveSkid.RotateBL = 0; }
+        if (whheel4 == 2) { wheelDriveSkid.torqueBR = 1; }
+        if (whheel4 == 1) { wheelDriveSkid.torqueBR = -1; }
+        if (whheel4 == 0) { wheelDriveSkid.torqueBR = 0; }
 
 
-        if (leg4 == 1) { wheelDriveSkid.RotateBR = 1; }
-        if (leg4 == 2) { wheelDriveSkid.RotateBR = -1; }
-        if (leg4 == 3) { wheelDriveSkid.RotateBR = 0; }
+
+        if (leg1 == 2) { wheelDriveSkid.RotateFL = 1; }
+        if (leg1 == 1) { wheelDriveSkid.RotateFL = -1; }
+        if (leg1 == 0) { wheelDriveSkid.RotateFL = 0; }
+
+        if (leg2 == 2) { wheelDriveSkid.RotateFR = 1; }
+        if (leg2 == 1) { wheelDriveSkid.RotateFR = -1; }
+        if (leg2 == 0) { wheelDriveSkid.RotateFR = 0; }
+
+        if (leg3 == 2) { wheelDriveSkid.RotateBL = 1; }
+        if (leg3 == 1) { wheelDriveSkid.RotateBL = -1; }
+        if (leg3 == 0) { wheelDriveSkid.RotateBL = 0; }
+
+
+        if (leg4 == 2) { wheelDriveSkid.RotateBR = 1; }
+        if (leg4 == 1) { wheelDriveSkid.RotateBR = -1; }
+        if (leg4 == 0) { wheelDriveSkid.RotateBR = 0; }
 
 
 
@@ -335,10 +337,18 @@ public class UGV12PathLegsObstacles : Agent
                 actionBuffers.DiscreteActions[1].ToString(),
                 actionBuffers.DiscreteActions[2].ToString(),
                 actionBuffers.DiscreteActions[3].ToString(),
+                (wheelDriveSkid.torqueFL*maxTorque).ToString(),
+                (wheelDriveSkid.torqueFR*maxTorque).ToString(),
+                (wheelDriveSkid.torqueBL*maxTorque).ToString(),
+                (wheelDriveSkid.torqueFR*maxTorque).ToString(),
                 actionBuffers.DiscreteActions[4].ToString(),
                 actionBuffers.DiscreteActions[5].ToString(),
                 actionBuffers.DiscreteActions[6].ToString(),
                 actionBuffers.DiscreteActions[7].ToString(),
+                (wheelDriveSkid.RotateFL*wheelDriveSkid.maxRotationspeed).ToString(),
+                (wheelDriveSkid.RotateFR*wheelDriveSkid.maxRotationspeed).ToString(),
+                (wheelDriveSkid.RotateBL*wheelDriveSkid.maxRotationspeed).ToString(),
+                (wheelDriveSkid.RotateBR*wheelDriveSkid.maxRotationspeed).ToString(),
                 Vector3.Distance(velGoal, avgVel).ToString(),
                 m_OrientationCube.transform.InverseTransformDirection(avgVel).x.ToString(),
                 m_OrientationCube.transform.InverseTransformDirection(avgVel).y.ToString(),

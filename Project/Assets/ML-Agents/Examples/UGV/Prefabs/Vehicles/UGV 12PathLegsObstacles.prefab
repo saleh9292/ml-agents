@@ -688,7 +688,7 @@ MonoBehaviour:
     VectorActionSize: 0300000003000000030000000300000003000000030000000300000003000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 370cf8a7d1e2da544bb93691d393efa7, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: UGV12PathLegsObstacles
